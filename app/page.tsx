@@ -1,0 +1,263 @@
+import Image from 'next/image'
+import styles from './page.module.css'
+
+export default function Home() {
+  return (
+    <main className={styles.main}>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>The Shore Series</h1>
+          <p className={styles.heroText}>
+            The Shore had always been more than just a place.
+          </p>
+          <p className={styles.heroText}>
+            It was a pulse. The steady beat of friends who became family and love that outlasted the tide.
+          </p>
+          <p className={styles.heroText}>
+            Ryan and Cody. Madison and Declan. Luke and Abby.
+          </p>
+          <p className={styles.heroText}>
+            Each found their way back to themselves, and to each other, by standing shoulder to shoulder through the storms.
+          </p>
+          <p className={styles.heroText}>
+            Some stories end with a kiss.
+          </p>
+          <p className={styles.heroText}>
+            Theirs ended with a promise: to live, to love, to keep showing up.
+          </p>
+          <p className={styles.heroText}>
+            They'd learned that family isn't blood, or vows, or even names carved in sand.
+          </p>
+          <p className={styles.heroText}>
+            It's the people who stand beside you. Always.
+          </p>
+        </div>
+      </section>
+
+      {/* Books Section */}
+      <section className={styles.booksSection}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>The Shore Series</h2>
+          
+          {/* Book 1: The Shore */}
+          <div className={styles.bookCard}>
+            <div className={styles.bookImageWrapper}>
+              <Image
+                src="/The Shore - cover only.jpg"
+                alt="The Shore book cover"
+                width={400}
+                height={600}
+                className={styles.bookImage}
+                priority
+              />
+            </div>
+            <div className={styles.bookContent}>
+              <h3 className={styles.bookTitle}>The Shore</h3>
+              <p className={styles.bookTagline}>
+                She never believed in forever. Until him.
+              </p>
+              
+              <div className={styles.bookDescription}>
+                <p>
+                  Ryan Blake didn't come to the Outer Banks looking for love.
+                </p>
+                <p>
+                  She came for quiet, for space to breathe after years of running from heartbreak, from her past, and from herself. But the shore has a way of pulling truths to the surface, and when she breaks down on the side of the road, it's Cody Calloway who shows up. The boy she once knew. But now he's the man she can't seem to forget.
+                </p>
+                <p>
+                  Cody has already lost once. He buried the love of his life, and with her, the future he thought he'd have. Yet when Ryan stumbles back into his world, with her sharp wit, wild spirit, and haunted eyes, something shifts. She makes him want again. She makes him believe.
+                </p>
+                <p>
+                  But second chances don't come without ghosts. Between old scars and new temptations, between the weight of the past and the fragile hope of tomorrow, Ryan and Cody will have to fight. For honesty. For healing. For the kind of love that doesn't let go.
+                </p>
+                <p>
+                  On these Carolina shores, where waves break and begin again, two people discover that sometimes the hardest battles lead to the sweetest homecoming.
+                </p>
+              </div>
+
+              <div className={styles.amazonDescription}>
+                <p className={styles.amazonTagline}>
+                  She came to the Outer Banks to escape her past. He thought he'd already lost his future. One pile of sand changes everything.
+                </p>
+                <p>
+                  When Ryan Blake collides with Cody Calloway again, sparks fly. Fast, reckless, and impossible to ignore. But old wounds don't heal easy, and second chances don't come without a fight. On this North Carolina shore, love will test them, break them, and, if they're brave enough, remake them.
+                </p>
+              </div>
+
+              <div className={styles.bookCategories}>
+                <span className={styles.categoryTag}>Contemporary Romance</span>
+                <span className={styles.categoryTag}>Small Town Romance</span>
+                <span className={styles.categoryTag}>Second Chance Romance</span>
+                <span className={styles.categoryTag}>Beach Romance</span>
+              </div>
+
+              <div className={styles.buyButtons}>
+                <a 
+                  href="https://www.amazon.com/gp/product/B0G1TXP2RD" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Kindle
+                </a>
+                <a 
+                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Paperback
+                </a>
+                <a 
+                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Hardcover
+                </a>
+              </div>
+              <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+            </div>
+          </div>
+
+          {/* Book 2: For You */}
+          <div className={styles.bookCard}>
+            <div className={styles.bookImageWrapper}>
+              <Image
+                src="/For You - cover only.jpg"
+                alt="For You book cover"
+                width={400}
+                height={600}
+                className={styles.bookImage}
+              />
+            </div>
+            <div className={styles.bookContent}>
+              <h3 className={styles.bookTitle}>For You</h3>
+              <p className={styles.bookTagline}>
+                She never believed in forever. Until him.
+              </p>
+              
+              <div className={styles.bookDescription}>
+                <p>
+                  Madison Quinn doesn't do vulnerable. Her quick wit, guarded smile, and string of one-night stands have always kept her safe from the mess love leaves behind. But when her past collides with her present, Madison discovers that the truth she's buried isn't something she can outrun.
+                </p>
+                <p>
+                  Declan Healy isn't just the man who sees through her armor, he's the one willing to stand there when it all comes crashing down. With him, Madison finds laughter in the silence, tenderness in the storm, and a passion that makes her question everything she thought she knew about love.
+                </p>
+                <p>
+                  As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn't just want tonight, she wants forever.
+                </p>
+              </div>
+
+              <div className={styles.amazonDescription}>
+                <p>
+                  Madison Quinn doesn't do forever. She doesn't even do "next week." Quick flings and sharp wit have kept her heart safe for years, at least, that's what she tells herself.
+                </p>
+                <p>
+                  Then Declan Healy walks into her life. A man with steady hands, a quiet strength, and eyes that see through every wall she's ever built. He makes her laugh. He makes her trust. He makes her wonder if maybe, just maybe, forever isn't a lie after all.
+                </p>
+                <p>
+                  But Madison's past isn't simple. When the life she's built collides with the one she thought she left behind, everything she's kept buried comes rushing to the surface. Caught between who she was and who she's finally becoming, Madison has to decide: will she risk her heart again, or will she let fear keep her from the one thing she's always wanted?
+                </p>
+              </div>
+
+              <div className={styles.bookCategories}>
+                <span className={styles.categoryTag}>Contemporary Romance</span>
+                <span className={styles.categoryTag}>Friends to Lovers</span>
+                <span className={styles.categoryTag}>Slow Burn Romance</span>
+                <span className={styles.categoryTag}>Beach Town Romance</span>
+              </div>
+
+              <div className={styles.buyButtons}>
+                <a 
+                  href="https://www.amazon.com/You-Shore-Book-2-ebook/dp/B0G1Y6TGR9" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Kindle
+                </a>
+                <a 
+                  href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Paperback
+                </a>
+                <a 
+                  href="https://www.amazon.com/gp/product/B0G1YMPSQ6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Hardcover
+                </a>
+              </div>
+              <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+            </div>
+          </div>
+
+          {/* Coming Soon */}
+          <div className={styles.comingSoon}>
+            <h3 className={styles.comingSoonTitle}>Beside You</h3>
+            <p className={styles.comingSoonText}>Coming 2026</p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className={styles.aboutSection}>
+        <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>About the Author</h2>
+          
+          <div className={styles.aboutContent}>
+            <div className={styles.aboutImageWrapper}>
+              <Image
+                src="/Sus-bw.png"
+                alt="S.E. Brown"
+                width={300}
+                height={300}
+                className={styles.aboutAuthorImage}
+              />
+              <p className={styles.aboutPhotoCredit}>Author photo by Brooke Eppa.</p>
+            </div>
+            
+            <div className={styles.aboutTextContent}>
+              <p className={styles.aboutIntro}>
+                S.E. Brown is a
+              </p>
+              <p className={styles.aboutTrait}>
+                back-roads-drivin',
+              </p>
+              <p className={styles.aboutTrait}>
+                mac-and-cheese-lovin',
+              </p>
+              <p className={styles.aboutTrait}>
+                flip-flop-wearin',
+              </p>
+              <p className={styles.aboutTrait}>
+                Green-Bay-Packers-cheerin',
+              </p>
+              <p className={styles.aboutTrait}>
+                sugar-cookie-icing-decoratin',
+              </p>
+              <p className={styles.aboutTrait}>
+                music-cranked-up-singin'
+              </p>
+              <p className={styles.aboutOutro}>
+                writer of romance novels…with a little heat.
+              </p>
+              <a href="/about" className={styles.aboutLink}>
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}
+

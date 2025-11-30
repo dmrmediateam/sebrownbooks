@@ -1,0 +1,129 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+.aboutSection {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.backButton:hover {
+  background-color: var(--color-accent-blue);
+  transform: translateX(-4px);
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--color-dark-blue);
+  margin-bottom: 4rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authorImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(26, 42, 58, 0.2);
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.photoCredit {
+  font-size: 0.875rem;
+  color: var(--color-accent-blue);
+  font-style: italic;
+  text-align: center;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.intro {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  color: var(--color-text-primary);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.trait {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: var(--color-dark-blue);
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.outro {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  color: var(--color-text-primary);
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageWrapper {
+    order: 1;
+  }
+
+  .textContent {
+    order: 2;
+  }
+
+  .authorImage {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .aboutSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+}
+
