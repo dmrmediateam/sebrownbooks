@@ -62,9 +62,6 @@ export default function Home() {
             </div>
             <div className={styles.bookContent}>
               <h3 className={styles.bookTitle}>The Shore</h3>
-              <p className={styles.bookTagline}>
-                She never believed in forever. Until him.
-              </p>
               
               <div className={styles.bookDescription}>
                 <p>
@@ -134,9 +131,6 @@ export default function Home() {
             </div>
             <div className={styles.bookContent}>
               <h3 className={styles.bookTitle}>For You</h3>
-              <p className={styles.bookTagline}>
-                She never believed in forever. Until him.
-              </p>
               
               <div className={styles.bookDescription}>
                 <p>
