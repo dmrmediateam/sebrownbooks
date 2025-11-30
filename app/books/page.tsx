@@ -298,7 +298,7 @@ export default function Books() {
             <h2 className={styles.comingSoonTitle}>Beside You</h2>
             <p className={styles.comingSoonText}>Coming 2026</p>
             <p className={styles.comingSoonSubtext}>
-              The next chapter in The Shore Series
+              Every story leaves a ripple. Here&apos;s what comes next.
             </p>
           </div>
         </div>
