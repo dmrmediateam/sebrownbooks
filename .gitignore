@@ -34,3 +34,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Large source files (not needed for website)
+*.psd
+*.tif
+*.eps
+*shutterstock*
+
