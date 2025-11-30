@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section className={styles.sectionContent}>
-              <h2 className={styles.heading}>Children's Privacy</h2>
+              <h2 className={styles.heading}>Children&apos;s Privacy</h2>
               <p>
                 Our Service is not intended for children under the age of 18. We do not knowingly collect 
                 personal information from children. If you are a parent or guardian and believe your child 
