@@ -126,22 +126,6 @@ export default function Books() {
                 </div>
               </div>
 
-              <div className={styles.amazonSection}>
-                <h3 className={styles.sectionHeading}>Amazon Description</h3>
-                <div className={styles.amazonDescription}>
-                  <p className={styles.amazonTagline}>
-                    She came to the Outer Banks to escape her past. He thought he&apos;d already lost his future. 
-                    One pile of sand changes everything.
-                  </p>
-                  <p>
-                    When Ryan Blake collides with Cody Calloway again, sparks fly. Fast, reckless, and impossible 
-                    to ignore. But old wounds don&apos;t heal easy, and second chances don&apos;t come without a fight. 
-                    On this North Carolina shore, love will test them, break them, and, if they&apos;re brave enough, 
-                    remake them.
-                  </p>
-                </div>
-              </div>
-
               <div className={styles.buySection}>
                 <h3 className={styles.sectionHeading}>Get Your Copy</h3>
                 <div className={styles.buyButtons}>
@@ -268,27 +252,6 @@ export default function Books() {
                   <span className={styles.categoryTag}>Beach Town Romance</span>
                   <span className={styles.categoryTag}>Emotional Romance</span>
                   <span className={styles.categoryTag}>Found Family</span>
-                </div>
-              </div>
-
-              <div className={styles.amazonSection}>
-                <h3 className={styles.sectionHeading}>Amazon Description</h3>
-                <div className={styles.amazonDescription}>
-                  <p>
-                    Madison Quinn doesn&apos;t do forever. She doesn&apos;t even do &quot;next week.&quot; Quick flings and sharp wit 
-                    have kept her heart safe for years, at least, that&apos;s what she tells herself.
-                  </p>
-                  <p>
-                    Then Declan Healy walks into her life. A man with steady hands, a quiet strength, and eyes that 
-                    see through every wall she&apos;s ever built. He makes her laugh. He makes her trust. He makes her 
-                    wonder if maybe, just maybe, forever isn&apos;t a lie after all.
-                  </p>
-                  <p>
-                    But Madison&apos;s past isn&apos;t simple. When the life she&apos;s built collides with the one she thought she 
-                    left behind, everything she&apos;s kept buried comes rushing to the surface. Caught between who she 
-                    was and who she&apos;s finally becoming, Madison has to decide: will she risk her heart again, or will 
-                    she let fear keep her from the one thing she&apos;s always wanted?
-                  </p>
                 </div>
               </div>
 

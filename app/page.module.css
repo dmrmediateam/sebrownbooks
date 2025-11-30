@@ -18,9 +18,18 @@
 
 .heroTitle {
   font-size: clamp(3rem, 6vw, 5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--color-off-white);
   font-weight: 400;
+}
+
+.heroIntro {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: rgba(245, 245, 240, 0.95);
+  font-weight: 300;
+  font-style: italic;
 }
 
 .heroText {
@@ -42,6 +51,24 @@
   margin: 0 auto;
 }
 
+.personalNote {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background-color: rgba(26, 42, 58, 0.03);
+  border-left: 3px solid var(--color-accent-blue);
+  border-radius: 4px;
+}
+
+.personalNoteText {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  font-weight: 300;
+  font-style: italic;
+  margin: 0;
+}
+
 .sectionTitle {
   text-align: center;
   margin-bottom: 4rem;
@@ -57,8 +84,9 @@
   margin-bottom: 6rem;
   padding: 3rem;
   background-color: var(--color-off-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(26, 42, 58, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(26, 42, 58, 0.08);
+  border: 1px solid rgba(26, 42, 58, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

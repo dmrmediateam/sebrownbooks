@@ -8,6 +8,9 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>The Shore Series</h1>
+          <p className={styles.heroIntro}>
+            Welcome to my little corner of the internet. I&apos;m so glad you&apos;re here.
+          </p>
           <p className={styles.heroText}>
             The Shore had always been more than just a place.
           </p>
@@ -38,6 +41,11 @@ export default function Home() {
       {/* Books Section */}
       <section className={styles.booksSection}>
         <div className={styles.container}>
+          <div className={styles.personalNote}>
+            <p className={styles.personalNoteText}>
+              These stories came from a place of wanting to explore what happens when people find their way back to themselves—and to each other. I hope they feel like coming home.
+            </p>
+          </div>
           <h2 className={styles.sectionTitle}>The Shore Series</h2>
           
           {/* Book 1: The Shore */}
@@ -73,15 +81,6 @@ export default function Home() {
                 </p>
                 <p>
                   On these Carolina shores, where waves break and begin again, two people discover that sometimes the hardest battles lead to the sweetest homecoming.
-                </p>
-              </div>
-
-              <div className={styles.amazonDescription}>
-                <p className={styles.amazonTagline}>
-                  She came to the Outer Banks to escape her past. He thought he&apos;d already lost his future. One pile of sand changes everything.
-                </p>
-                <p>
-                  When Ryan Blake collides with Cody Calloway again, sparks fly. Fast, reckless, and impossible to ignore. But old wounds don&apos;t heal easy, and second chances don&apos;t come without a fight. On this North Carolina shore, love will test them, break them, and, if they&apos;re brave enough, remake them.
                 </p>
               </div>
 
@@ -148,18 +147,6 @@ export default function Home() {
                 </p>
                 <p>
                   As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn&apos;t just want tonight, she wants forever.
-                </p>
-              </div>
-
-              <div className={styles.amazonDescription}>
-                <p>
-                  Madison Quinn doesn&apos;t do forever. She doesn&apos;t even do &quot;next week.&quot; Quick flings and sharp wit have kept her heart safe for years, at least, that&apos;s what she tells herself.
-                </p>
-                <p>
-                  Then Declan Healy walks into her life. A man with steady hands, a quiet strength, and eyes that see through every wall she&apos;s ever built. He makes her laugh. He makes her trust. He makes her wonder if maybe, just maybe, forever isn&apos;t a lie after all.
-                </p>
-                <p>
-                  But Madison&apos;s past isn&apos;t simple. When the life she&apos;s built collides with the one she thought she left behind, everything she&apos;s kept buried comes rushing to the surface. Caught between who she was and who she&apos;s finally becoming, Madison has to decide: will she risk her heart again, or will she let fear keep her from the one thing she&apos;s always wanted?
                 </p>
               </div>
 
