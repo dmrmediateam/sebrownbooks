@@ -27,10 +27,10 @@ export default function Home() {
             Theirs ended with a promise: to live, to love, to keep showing up.
           </p>
           <p className={styles.heroText}>
-            They'd learned that family isn't blood, or vows, or even names carved in sand.
+            They&apos;d learned that family isn&apos;t blood, or vows, or even names carved in sand.
           </p>
           <p className={styles.heroText}>
-            It's the people who stand beside you. Always.
+            It&apos;s the people who stand beside you. Always.
           </p>
         </div>
       </section>
@@ -60,16 +60,16 @@ export default function Home() {
               
               <div className={styles.bookDescription}>
                 <p>
-                  Ryan Blake didn't come to the Outer Banks looking for love.
+                  Ryan Blake didn&apos;t come to the Outer Banks looking for love.
                 </p>
                 <p>
-                  She came for quiet, for space to breathe after years of running from heartbreak, from her past, and from herself. But the shore has a way of pulling truths to the surface, and when she breaks down on the side of the road, it's Cody Calloway who shows up. The boy she once knew. But now he's the man she can't seem to forget.
+                  She came for quiet, for space to breathe after years of running from heartbreak, from her past, and from herself. But the shore has a way of pulling truths to the surface, and when she breaks down on the side of the road, it&apos;s Cody Calloway who shows up. The boy she once knew. But now he&apos;s the man she can&apos;t seem to forget.
                 </p>
                 <p>
-                  Cody has already lost once. He buried the love of his life, and with her, the future he thought he'd have. Yet when Ryan stumbles back into his world, with her sharp wit, wild spirit, and haunted eyes, something shifts. She makes him want again. She makes him believe.
+                  Cody has already lost once. He buried the love of his life, and with her, the future he thought he&apos;d have. Yet when Ryan stumbles back into his world, with her sharp wit, wild spirit, and haunted eyes, something shifts. She makes him want again. She makes him believe.
                 </p>
                 <p>
-                  But second chances don't come without ghosts. Between old scars and new temptations, between the weight of the past and the fragile hope of tomorrow, Ryan and Cody will have to fight. For honesty. For healing. For the kind of love that doesn't let go.
+                  But second chances don&apos;t come without ghosts. Between old scars and new temptations, between the weight of the past and the fragile hope of tomorrow, Ryan and Cody will have to fight. For honesty. For healing. For the kind of love that doesn&apos;t let go.
                 </p>
                 <p>
                   On these Carolina shores, where waves break and begin again, two people discover that sometimes the hardest battles lead to the sweetest homecoming.
@@ -78,10 +78,10 @@ export default function Home() {
 
               <div className={styles.amazonDescription}>
                 <p className={styles.amazonTagline}>
-                  She came to the Outer Banks to escape her past. He thought he'd already lost his future. One pile of sand changes everything.
+                  She came to the Outer Banks to escape her past. He thought he&apos;d already lost his future. One pile of sand changes everything.
                 </p>
                 <p>
-                  When Ryan Blake collides with Cody Calloway again, sparks fly. Fast, reckless, and impossible to ignore. But old wounds don't heal easy, and second chances don't come without a fight. On this North Carolina shore, love will test them, break them, and, if they're brave enough, remake them.
+                  When Ryan Blake collides with Cody Calloway again, sparks fly. Fast, reckless, and impossible to ignore. But old wounds don&apos;t heal easy, and second chances don&apos;t come without a fight. On this North Carolina shore, love will test them, break them, and, if they&apos;re brave enough, remake them.
                 </p>
               </div>
 
@@ -141,25 +141,25 @@ export default function Home() {
               
               <div className={styles.bookDescription}>
                 <p>
-                  Madison Quinn doesn't do vulnerable. Her quick wit, guarded smile, and string of one-night stands have always kept her safe from the mess love leaves behind. But when her past collides with her present, Madison discovers that the truth she's buried isn't something she can outrun.
+                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit, guarded smile, and string of one-night stands have always kept her safe from the mess love leaves behind. But when her past collides with her present, Madison discovers that the truth she&apos;s buried isn&apos;t something she can outrun.
                 </p>
                 <p>
-                  Declan Healy isn't just the man who sees through her armor, he's the one willing to stand there when it all comes crashing down. With him, Madison finds laughter in the silence, tenderness in the storm, and a passion that makes her question everything she thought she knew about love.
+                  Declan Healy isn&apos;t just the man who sees through her armor, he&apos;s the one willing to stand there when it all comes crashing down. With him, Madison finds laughter in the silence, tenderness in the storm, and a passion that makes her question everything she thought she knew about love.
                 </p>
                 <p>
-                  As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn't just want tonight, she wants forever.
+                  As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn&apos;t just want tonight, she wants forever.
                 </p>
               </div>
 
               <div className={styles.amazonDescription}>
                 <p>
-                  Madison Quinn doesn't do forever. She doesn't even do "next week." Quick flings and sharp wit have kept her heart safe for years, at least, that's what she tells herself.
+                  Madison Quinn doesn&apos;t do forever. She doesn&apos;t even do &quot;next week.&quot; Quick flings and sharp wit have kept her heart safe for years, at least, that&apos;s what she tells herself.
                 </p>
                 <p>
-                  Then Declan Healy walks into her life. A man with steady hands, a quiet strength, and eyes that see through every wall she's ever built. He makes her laugh. He makes her trust. He makes her wonder if maybe, just maybe, forever isn't a lie after all.
+                  Then Declan Healy walks into her life. A man with steady hands, a quiet strength, and eyes that see through every wall she&apos;s ever built. He makes her laugh. He makes her trust. He makes her wonder if maybe, just maybe, forever isn&apos;t a lie after all.
                 </p>
                 <p>
-                  But Madison's past isn't simple. When the life she's built collides with the one she thought she left behind, everything she's kept buried comes rushing to the surface. Caught between who she was and who she's finally becoming, Madison has to decide: will she risk her heart again, or will she let fear keep her from the one thing she's always wanted?
+                  But Madison&apos;s past isn&apos;t simple. When the life she&apos;s built collides with the one she thought she left behind, everything she&apos;s kept buried comes rushing to the surface. Caught between who she was and who she&apos;s finally becoming, Madison has to decide: will she risk her heart again, or will she let fear keep her from the one thing she&apos;s always wanted?
                 </p>
               </div>
 
@@ -230,22 +230,22 @@ export default function Home() {
                 S.E. Brown is a
               </p>
               <p className={styles.aboutTrait}>
-                back-roads-drivin',
+                back-roads-drivin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                mac-and-cheese-lovin',
+                mac-and-cheese-lovin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                flip-flop-wearin',
+                flip-flop-wearin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                Green-Bay-Packers-cheerin',
+                Green-Bay-Packers-cheerin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                sugar-cookie-icing-decoratin',
+                sugar-cookie-icing-decoratin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                music-cranked-up-singin'
+                music-cranked-up-singin&apos;
               </p>
               <p className={styles.aboutOutro}>
                 writer of romance novels…with a little heat.

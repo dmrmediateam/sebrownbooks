@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             <section className={styles.sectionContent}>
               <h2 className={styles.heading}>Introduction</h2>
               <p>
-                S.E. Brown ("we," "our," or "us") operates the SE Brown Books website (the "Service"). 
+                S.E. Brown (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the SE Brown Books website (the &quot;Service&quot;). 
                 This page informs you of our policies regarding the collection, use, and disclosure of 
                 personal data when you use our Service and the choices you have associated with that data.
               </p>
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
                 you to review the privacy policies of any third-party sites you visit.
               </p>
               <p>
-                When you click on links to purchase books on Amazon, you will be directed to Amazon's website, 
+                When you click on links to purchase books on Amazon, you will be directed to Amazon&apos;s website, 
                 which has its own privacy policy. We do not have access to or control over information collected 
                 by Amazon or other third-party services.
               </p>
@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
               <h2 className={styles.heading}>Changes to This Privacy Policy</h2>
               <p>
                 We may update our Privacy Policy from time to time. We will notify you of any changes by 
-                posting the new Privacy Policy on this page and updating the "Last updated" date at the 
+                posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date at the 
                 top of this policy.
               </p>
               <p>
