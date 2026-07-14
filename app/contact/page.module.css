@@ -1,0 +1,99 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.backButton:hover {
+  background-color: var(--color-accent-blue);
+  transform: translateX(-4px);
+  color: var(--color-off-white);
+}
+
+.header {
+  margin-bottom: 3rem;
+  max-width: 40rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--color-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  color: var(--color-text-primary);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.asideTitle {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  color: var(--color-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.asideText {
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+}
+
+.emailLink {
+  color: var(--color-dark-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.emailLink:hover {
+  color: var(--color-accent-blue);
+}
+
+.formWrap {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3rem 1.5rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,110 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-dark-blue);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 1rem;
+  font-family: 'AmazonEndure', sans-serif;
+  font-weight: 400;
+  color: var(--color-off-black);
+  background-color: #fff;
+  border: 1px solid rgba(26, 42, 58, 0.2);
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.6;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba(15, 20, 25, 0.45);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-dark-blue);
+  box-shadow: 0 0 0 3px rgba(26, 42, 58, 0.12);
+}
+
+.input:disabled,
+.textarea:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.submitButton {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: var(--color-accent-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 42, 58, 0.2);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #8b1e1e;
+  font-size: 0.95rem;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--color-accent-blue);
+  font-weight: 300;
+}
+
+.successPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.successTitle {
+  color: var(--color-dark-blue);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.successText {
+  color: var(--color-text-primary);
+  max-width: 32rem;
+}
+
+@media (max-width: 640px) {
+  .submitButton {
+    width: 100%;
+  }
+}

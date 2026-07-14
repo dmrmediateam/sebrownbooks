@@ -28,9 +28,9 @@ export default function TheShoreContentWarnings() {
               </p>
               <p className={styles.contactNote}>
                 If you&apos;re ever unsure, feel free to{' '}
-                <a href="#" className={styles.contactLink}>
+                <Link href="/contact" className={styles.contactLink}>
                   reach out
-                </a>
+                </Link>
                 .
               </p>
             </div>

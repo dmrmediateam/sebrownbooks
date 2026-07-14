@@ -31,8 +31,9 @@ export default function PrivacyPolicy() {
             <section className={styles.sectionContent}>
               <h2 className={styles.heading}>Information We Collect</h2>
               <p>
-                We currently do not collect personal information directly through our website. However, 
-                if you interact with our website, certain information may be automatically collected, including:
+                We may collect personal information you voluntarily provide when you use our contact form,
+                including your name, email address, phone number, and message. Certain information may also
+                be automatically collected when you visit our website, including:
               </p>
               <ul className={styles.list}>
                 <li>Browser type and version</li>
@@ -118,8 +119,8 @@ export default function PrivacyPolicy() {
             <section className={styles.sectionContent}>
               <h2 className={styles.heading}>Contact Us</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us through our website 
-                or by visiting our <Link href="/about" className={styles.inlineLink}>About</Link> page.
+                If you have any questions about this Privacy Policy, please reach out via our{' '}
+                <Link href="/contact" className={styles.inlineLink}>Contact</Link> page.
               </p>
             </section>
           </div>
