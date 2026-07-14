@@ -230,6 +230,27 @@
   font-weight: 400;
 }
 
+.bookPageLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.875rem 2rem;
+  background-color: transparent;
+  color: var(--color-dark-blue);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid var(--color-dark-blue);
+  transition: all 0.3s ease;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.bookPageLink:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  transform: translateY(-2px);
+}
+
 /* Coming Soon */
 .comingSoon {
   text-align: center;

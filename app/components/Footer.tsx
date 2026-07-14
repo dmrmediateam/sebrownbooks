@@ -37,14 +37,23 @@ export default function Footer() {
             >
               Facebook
             </a>
-            <a 
-              href="https://www.instagram.com/sebrownbooks/" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/sebrownbooks/"
+              target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
               aria-label="Instagram"
             >
               Instagram
+            </a>
+            <a
+              href="https://www.tiktok.com/@sebrownbooks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="TikTok"
+            >
+              TikTok
             </a>
           </div>
           <div className={styles.copyright}>

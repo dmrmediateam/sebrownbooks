@@ -1,0 +1,144 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1001;
+}
+
+.logo {
+  font-family: 'shelby', 'AmazonEndure', serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-off-white);
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: rgba(245, 245, 240, 0.8);
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburgerBar {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--color-off-white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburgerOpen .hamburgerBar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburgerOpen .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen .hamburgerBar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Full-screen Menu Overlay */
+.menu {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-16px);
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
+  z-index: 999;
+}
+
+.menuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.menuLink {
+  font-family: 'shelby', 'AmazonEndure', serif;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  color: var(--color-off-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menuLink:hover {
+  color: rgba(245, 245, 240, 0.7);
+}
+
+.menuLinkActive {
+  color: var(--color-accent-blue);
+  text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 968px) {
+  .bar {
+    padding: 1.125rem 1.75rem;
+  }
+
+  .menuList {
+    gap: 1.75rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .bar {
+    padding: 1rem 1.5rem;
+  }
+
+  .hamburger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuList {
+    gap: 1.5rem;
+  }
+
+  .menuLink {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+}

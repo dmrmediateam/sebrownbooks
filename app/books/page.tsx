@@ -83,16 +83,16 @@ export default function Books() {
                   <div className={styles.character}>
                     <h4 className={styles.characterName}>Ryan Blake</h4>
                     <p className={styles.characterDesc}>
-                      A woman running from her past, seeking solace on the Outer Banks. Sharp-witted, independent, 
-                      and haunted by heartbreak, she&apos;s determined to build a new life—alone. But the shore has 
+                      A woman running from her past seeks solace on the Outer Banks. Sharp-witted, independent,
+                      and haunted by heartbreak, she&apos;s determined to build a new life, alone. But the shore has
                       other plans.
                     </p>
                   </div>
                   <div className={styles.character}>
                     <h4 className={styles.characterName}>Cody Calloway</h4>
                     <p className={styles.characterDesc}>
-                      A man who&apos;s already lost the love of his life. Grief has shaped him, but when Ryan returns, 
-                      he finds himself wanting to believe in second chances—and in a future he thought was gone forever.
+                      A man who&apos;s already lost the love of his life. Grief has shaped him, but when Ryan returns,
+                      he finds himself wanting to believe in second chances, and in a future he thought was gone forever.
                     </p>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ export default function Books() {
         <div className={styles.container}>
           <div className={styles.comingSoon}>
             <div className={styles.bookNumber}>Book 3</div>
-            <h2 className={styles.comingSoonTitle}>Beside You</h2>
+            <h2 className={styles.comingSoonTitle}>Beside Us</h2>
             <p className={styles.comingSoonText}>Coming 2026</p>
             <p className={styles.comingSoonSubtext}>
               Every story leaves a ripple. Here&apos;s what comes next.

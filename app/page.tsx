@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -115,6 +116,9 @@ export default function Home() {
                 </a>
               </div>
               <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+              <Link href="/books/the-shore" className={styles.bookPageLink}>
+                More About The Shore
+              </Link>
             </div>
           </div>
 
@@ -178,12 +182,15 @@ export default function Home() {
                 </a>
               </div>
               <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+              <Link href="/books/for-you" className={styles.bookPageLink}>
+                More About For You
+              </Link>
             </div>
           </div>
 
           {/* Coming Soon */}
           <div className={styles.comingSoon}>
-            <h3 className={styles.comingSoonTitle}>Beside You</h3>
+            <h3 className={styles.comingSoonTitle}>Beside Us</h3>
             <p className={styles.comingSoonText}>Coming 2026</p>
           </div>
         </div>
