@@ -95,7 +95,7 @@
 
 .successTitle {
   color: var(--color-dark-blue);
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-size: clamp(2.1rem, 3.6vw, 2.7rem);
 }
 
 .successText {

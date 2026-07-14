@@ -30,8 +30,8 @@ export default function ContactPage() {
               <h2 className={styles.asideTitle}>Say hello</h2>
               <p className={styles.asideText}>
                 Prefer email? You can also reach me directly at{' '}
-                <a href="mailto:dxautomate@gmail.com" className={styles.emailLink}>
-                  dxautomate@gmail.com
+                <a href="mailto:seb@sebrownbooks.com" className={styles.emailLink}>
+                  seb@sebrownbooks.com
                 </a>
                 .
               </p>

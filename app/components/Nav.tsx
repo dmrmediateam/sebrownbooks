@@ -49,6 +49,12 @@ export default function Nav() {
         </button>
       </div>
 
+      <div
+        className={`${styles.backdrop} ${isOpen ? styles.backdropVisible : ''}`}
+        onClick={() => setIsOpen(false)}
+        aria-hidden="true"
+      />
+
       <nav
         id="site-menu"
         className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}

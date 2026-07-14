@@ -96,7 +96,7 @@
 }
 
 .listHeading {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   color: var(--color-dark-blue);
   margin-bottom: 1.5rem;
 }

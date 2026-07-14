@@ -30,22 +30,22 @@ export default function About() {
                 S.E. Brown is a
               </p>
               <p className={styles.trait}>
+                flip-flop-wearin&apos;,
+              </p>
+              <p className={styles.trait}>
                 back-roads-drivin&apos;,
               </p>
               <p className={styles.trait}>
                 mac-and-cheese-lovin&apos;,
               </p>
               <p className={styles.trait}>
-                flip-flop-wearin&apos;,
+                romance-book-devourin&apos;,
               </p>
               <p className={styles.trait}>
-                Green-Bay-Packers-cheerin&apos;,
+                music-cranked-up-singin&apos;,
               </p>
               <p className={styles.trait}>
-                sugar-cookie-icing-decoratin&apos;,
-              </p>
-              <p className={styles.trait}>
-                music-cranked-up-singin&apos;
+                Colorado-Avalanche-cheerin&apos;,
               </p>
               <p className={styles.outro}>
                 writer of romance novels…with a little heat.

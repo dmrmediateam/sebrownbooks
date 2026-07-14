@@ -126,7 +126,7 @@
 }
 
 .ctaTitle {
-  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-size: clamp(2.1rem, 4.2vw, 2.7rem);
   color: var(--color-off-white);
   margin-bottom: 1rem;
   font-weight: 400;

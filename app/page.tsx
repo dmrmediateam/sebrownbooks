@@ -218,22 +218,22 @@ export default function Home() {
                 S.E. Brown is a
               </p>
               <p className={styles.aboutTrait}>
+                flip-flop-wearin&apos;,
+              </p>
+              <p className={styles.aboutTrait}>
                 back-roads-drivin&apos;,
               </p>
               <p className={styles.aboutTrait}>
                 mac-and-cheese-lovin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                flip-flop-wearin&apos;,
+                romance-book-devourin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                Green-Bay-Packers-cheerin&apos;,
+                music-cranked-up-singin&apos;,
               </p>
               <p className={styles.aboutTrait}>
-                sugar-cookie-icing-decoratin&apos;,
-              </p>
-              <p className={styles.aboutTrait}>
-                music-cranked-up-singin&apos;
+                Colorado-Avalanche-cheerin&apos;,
               </p>
               <p className={styles.aboutOutro}>
                 writer of romance novels…with a little heat.
