@@ -92,7 +92,7 @@ export default function Home() {
           <div className={styles.aboutContent}>
             <div className={styles.aboutImageWrapper}>
               <Image
-                src="/Sus-bw.png"
+                src="/Sus-LO.jpg"
                 alt="S.E. Brown"
                 width={300}
                 height={300}

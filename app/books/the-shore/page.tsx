@@ -8,9 +8,6 @@ export default function TheShore() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <Link href="/" className={styles.backButton}>
-            ← Back to Home
-          </Link>
           <h1 className={styles.heroTitle}>The Shore</h1>
           <p className={styles.heroTagline}>
             She never believed in forever. Until him.
@@ -62,44 +59,21 @@ export default function TheShore() {
                   <div className={styles.character}>
                     <h3 className={styles.characterName}>Ryan Blake</h3>
                     <p className={styles.characterDesc}>
-                      A woman running from her past seeks solace on the Outer Banks. Sharp-witted, independent,
-                      and haunted by heartbreak, she&apos;s determined to build a new life, alone. But the shore has
-                      other plans.
+                      Sharp-witted and fiercely independent, Ryan has never needed anyone to take care of her, and
+                      she&apos;s proud of it. She notices everything and says exactly what she thinks, but underneath
+                      the guarded exterior is someone who loves hard once she lets someone in. She isn&apos;t looking
+                      to be rescued, just someone who can keep up with her.
                     </p>
                   </div>
                   <div className={styles.character}>
                     <h3 className={styles.characterName}>Cody Calloway</h3>
                     <p className={styles.characterDesc}>
-                      A man who&apos;s already lost the love of his life. Grief has shaped him, but when Ryan returns,
-                      he finds himself wanting to believe in second chances, and in a future he thought was gone forever.
+                      Steady, low-key, and impossible to rattle, Cody is the guy who shows up without making a thing
+                      of it. He&apos;s spent years building a quiet, solid life after loss, and he&apos;s good at taking
+                      care of everyone but himself. Cody doesn&apos;t chase, he shows up, again and again, until Ryan
+                      realizes he&apos;s not going anywhere.
                     </p>
                   </div>
-                </div>
-              </div>
-
-              <div className={styles.themesSection}>
-                <h2 className={styles.sectionHeading}>Themes & Tropes</h2>
-                <div className={styles.themeList}>
-                  <span className={styles.themeTag}>Second Chance Romance</span>
-                  <span className={styles.themeTag}>Grief & Healing</span>
-                  <span className={styles.themeTag}>Small Town Romance</span>
-                  <span className={styles.themeTag}>Beach Setting</span>
-                  <span className={styles.themeTag}>Found Family</span>
-                  <span className={styles.themeTag}>Emotional Journey</span>
-                  <span className={styles.themeTag}>Slow Burn</span>
-                  <span className={styles.themeTag}>Strong Heroine</span>
-                </div>
-              </div>
-
-              <div className={styles.categoriesSection}>
-                <h2 className={styles.sectionHeading}>Categories</h2>
-                <div className={styles.categories}>
-                  <span className={styles.categoryTag}>Contemporary Romance</span>
-                  <span className={styles.categoryTag}>Small Town Romance</span>
-                  <span className={styles.categoryTag}>Second Chance Romance</span>
-                  <span className={styles.categoryTag}>Beach Romance</span>
-                  <span className={styles.categoryTag}>Emotional Romance</span>
-                  <span className={styles.categoryTag}>Found Family</span>
                 </div>
               </div>
 

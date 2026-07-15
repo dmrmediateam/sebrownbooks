@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import ContactForm from '../components/ContactForm'
 import styles from './page.module.css'
 
@@ -13,10 +12,6 @@ export default function ContactPage() {
     <main className={styles.main}>
       <section className={styles.section}>
         <div className={styles.container}>
-          <Link href="/" className={styles.backButton}>
-            ← Back to Home
-          </Link>
-
           <div className={styles.header}>
             <h1 className={styles.title}>Contact</h1>
             <p className={styles.intro}>

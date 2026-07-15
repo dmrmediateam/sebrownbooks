@@ -7,9 +7,6 @@ export default function TheShoreContentWarnings() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <Link href="/books/the-shore" className={styles.backButton}>
-            ← Back to The Shore
-          </Link>
           <h1 className={styles.heroTitle}>Content Warnings</h1>
           <p className={styles.heroTagline}>A note before you dive into The Shore</p>
         </div>

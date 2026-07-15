@@ -8,9 +8,6 @@ export default function ForYou() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <Link href="/" className={styles.backButton}>
-            ← Back to Home
-          </Link>
           <h1 className={styles.heroTitle}>For You</h1>
           <p className={styles.heroTagline}>
             She never believed in forever. Until him.
@@ -56,45 +53,21 @@ export default function ForYou() {
                   <div className={styles.character}>
                     <h3 className={styles.characterName}>Madison Quinn</h3>
                     <p className={styles.characterDesc}>
-                      Quick-witted and fiercely independent, Madison has built walls around her heart with one-night
-                      stands and sharp humor. But when her past catches up, she discovers that running isn&apos;t the
-                      answer—and that maybe, just maybe, forever isn&apos;t a lie.
+                      Bright and a little chaotic, Madison uses charm and one-night stands to keep anyone from
+                      getting close enough to hurt her. She&apos;s the friend who always has a comeback ready and
+                      never lets the conversation get too serious. But underneath the jokes is someone still
+                      running from a past she hasn&apos;t dealt with.
                     </p>
                   </div>
                   <div className={styles.character}>
                     <h3 className={styles.characterName}>Declan Healy</h3>
                     <p className={styles.characterDesc}>
-                      A man with steady hands and quiet strength, Declan sees through every wall Madison has built.
-                      He&apos;s patient, he&apos;s persistent, and he&apos;s willing to stand there when everything comes crashing
-                      down. With him, Madison finds the courage to trust again.
+                      Patient and steady, Declan doesn&apos;t push. He&apos;s the kind of man who notices what people
+                      don&apos;t say and sticks around anyway. With Madison, he&apos;s willing to wait her out, to stand
+                      there when her walls finally crack, and to prove that not everyone leaves when things get
+                      hard. He&apos;s not fixing her, he&apos;s just there.
                     </p>
                   </div>
-                </div>
-              </div>
-
-              <div className={styles.themesSection}>
-                <h2 className={styles.sectionHeading}>Themes & Tropes</h2>
-                <div className={styles.themeList}>
-                  <span className={styles.themeTag}>Friends to Lovers</span>
-                  <span className={styles.themeTag}>Slow Burn</span>
-                  <span className={styles.themeTag}>Beach Town Romance</span>
-                  <span className={styles.themeTag}>Found Family</span>
-                  <span className={styles.themeTag}>Emotional Romance</span>
-                  <span className={styles.themeTag}>Strong Female Lead</span>
-                  <span className={styles.themeTag}>Healing & Forgiveness</span>
-                  <span className={styles.themeTag}>Second Chance</span>
-                </div>
-              </div>
-
-              <div className={styles.categoriesSection}>
-                <h2 className={styles.sectionHeading}>Categories</h2>
-                <div className={styles.categories}>
-                  <span className={styles.categoryTag}>Contemporary Romance</span>
-                  <span className={styles.categoryTag}>Friends to Lovers</span>
-                  <span className={styles.categoryTag}>Slow Burn Romance</span>
-                  <span className={styles.categoryTag}>Beach Town Romance</span>
-                  <span className={styles.categoryTag}>Emotional Romance</span>
-                  <span className={styles.categoryTag}>Found Family</span>
                 </div>
               </div>
 

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function About() {
@@ -7,15 +6,12 @@ export default function About() {
     <main className={styles.main}>
       <section className={styles.aboutSection}>
         <div className={styles.container}>
-          <Link href="/" className={styles.backButton}>
-            ← Back to Home
-          </Link>
           <h1 className={styles.title}>About the Author</h1>
           
           <div className={styles.content}>
             <div className={styles.imageWrapper}>
               <Image
-                src="/Sus-bw.png"
+                src="/Sus-LO.jpg"
                 alt="S.E. Brown"
                 width={400}
                 height={400}

@@ -6,10 +6,6 @@ export default function PrivacyPolicy() {
     <main className={styles.main}>
       <section className={styles.section}>
         <div className={styles.container}>
-          <Link href="/" className={styles.backButton}>
-            ← Back to Home
-          </Link>
-          
           <h1 className={styles.title}>Privacy Policy</h1>
           <p className={styles.lastUpdated}>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 

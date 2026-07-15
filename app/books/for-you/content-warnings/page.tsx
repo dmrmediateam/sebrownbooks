@@ -7,9 +7,6 @@ export default function ForYouContentWarnings() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <Link href="/books/for-you" className={styles.backButton}>
-            ← Back to For You
-          </Link>
           <h1 className={styles.heroTitle}>Content Warnings</h1>
           <p className={styles.heroTagline}>A note before you dive into For You</p>
         </div>
