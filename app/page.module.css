@@ -23,18 +23,9 @@
   font-weight: 400;
 }
 
-.heroIntro {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  color: rgba(245, 245, 240, 0.95);
-  font-weight: 300;
-  font-style: italic;
-}
-
 .heroText {
   font-size: clamp(1.125rem, 2vw, 1.25rem);
-  line-height: 1.8;
+  line-height: 1.4;
   margin-bottom: 1.5rem;
   color: var(--color-off-white);
   font-weight: 300;
@@ -49,24 +40,6 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.personalNote {
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  padding: 2rem;
-  background-color: rgba(26, 42, 58, 0.03);
-  border-left: 3px solid var(--color-accent-blue);
-  border-radius: 4px;
-}
-
-.personalNoteText {
-  font-size: clamp(1.125rem, 2vw, 1.25rem);
-  line-height: 1.8;
-  color: var(--color-text-primary);
-  font-weight: 300;
-  font-style: italic;
-  margin: 0;
 }
 
 .sectionTitle {
@@ -95,31 +68,22 @@
   box-shadow: 0 8px 30px rgba(26, 42, 58, 0.15);
 }
 
-.bookCard:nth-child(even) {
-  grid-template-columns: 2fr 1fr;
-}
-
-.bookCard:nth-child(even) .bookImageWrapper {
-  order: 2;
-}
-
-.bookCard:nth-child(even) .bookContent {
-  order: 1;
-}
-
 .bookImageWrapper {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .bookImage {
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
+  min-width: 200px;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(26, 42, 58, 0.2);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .bookContent {
@@ -366,20 +330,16 @@
     gap: 2rem;
   }
 
-  .bookCard:nth-child(even) {
-    grid-template-columns: 1fr;
-  }
-
-  .bookCard:nth-child(even) .bookImageWrapper {
-    order: 1;
-  }
-
-  .bookCard:nth-child(even) .bookContent {
-    order: 2;
-  }
-
   .bookImageWrapper {
+    height: auto;
     max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .bookImage {
+    height: auto;
+    width: 100%;
+    min-width: 0;
   }
 }
 

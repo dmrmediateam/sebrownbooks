@@ -93,8 +93,9 @@
   background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
   box-shadow: -8px 0 30px rgba(0, 0, 0, 0.3);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding-top: calc(84px + 100px);
   transform: translateX(100%);
   transition: transform 0.35s ease;
   z-index: 999;
@@ -111,7 +112,7 @@
   align-items: flex-end;
   gap: 1.75rem;
   text-align: right;
-  padding: 6rem 2.5rem 3rem;
+  padding: 0 2.5rem 3rem;
 }
 
 .menuLink {
@@ -138,6 +139,10 @@
     padding: 1.125rem 1.75rem;
   }
 
+  .menu {
+    padding-top: calc(80px + 100px);
+  }
+
   .menuList {
     gap: 1.5rem;
   }
@@ -156,11 +161,12 @@
 
   .menu {
     width: 100vw;
+    padding-top: calc(72px + 100px);
   }
 
   .menuList {
     gap: 1.25rem;
-    padding: 5.5rem 2rem 3rem;
+    padding: 0 2rem 3rem;
   }
 
   .menuLink {

@@ -17,7 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/books`,
+      url: `${baseUrl}/books/the-shore`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/books/for-you`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,

@@ -9,32 +9,11 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>The Shore Series</h1>
-          <p className={styles.heroIntro}>
-            Welcome to my little corner of the internet. I&apos;m so glad you&apos;re here.
+          <p className={styles.heroText}>
+            <i>Some people come to the Outer Banks for the sand and surf. The people who stay find something they weren&apos;t looking for.</i>
           </p>
           <p className={styles.heroText}>
-            The Shore had always been more than just a place.
-          </p>
-          <p className={styles.heroText}>
-            It was a pulse. The steady beat of friends who became family and love that outlasted the tide.
-          </p>
-          <p className={styles.heroText}>
-            Ryan and Cody. Madison and Declan. Luke and Abby.
-          </p>
-          <p className={styles.heroText}>
-            Each found their way back to themselves, and to each other, by standing shoulder to shoulder through the storms.
-          </p>
-          <p className={styles.heroText}>
-            Some stories end with a kiss.
-          </p>
-          <p className={styles.heroText}>
-            Theirs ended with a promise: to live, to love, to keep showing up.
-          </p>
-          <p className={styles.heroText}>
-            They&apos;d learned that family isn&apos;t blood, or vows, or even names carved in sand.
-          </p>
-          <p className={styles.heroText}>
-            It&apos;s the people who stand beside you. Always.
+            The Shore Series is a contemporary small-town romance set on North Carolina&apos;s Outer Banks, following the found family of friends who become each other&apos;s anchors through heartbreak, second chances, and the slow work of choosing to stay. If you love slow-burn romance, small-town settings, and found family stories where the whole friend group gets its own happy ending, you&apos;re in the right place.
           </p>
         </div>
       </section>
@@ -42,19 +21,14 @@ export default function Home() {
       {/* Books Section */}
       <section className={styles.booksSection}>
         <div className={styles.container}>
-          <div className={styles.personalNote}>
-            <p className={styles.personalNoteText}>
-              These stories came from a place of wanting to explore what happens when people find their way back to themselves—and to each other. I hope they feel like coming home.
-            </p>
-          </div>
           <h2 className={styles.sectionTitle}>The Shore Series</h2>
-          
+
           {/* Book 1: The Shore */}
           <div className={styles.bookCard}>
             <div className={styles.bookImageWrapper}>
               <Image
                 src="/The Shore - cover only.jpg"
-                alt="The Shore book cover"
+                alt="Cover of The Shore by S.E. Brown"
                 width={400}
                 height={600}
                 className={styles.bookImage}
@@ -62,60 +36,14 @@ export default function Home() {
               />
             </div>
             <div className={styles.bookContent}>
-              <h3 className={styles.bookTitle}>The Shore</h3>
-              
+              <h3 className={styles.bookTitle}>The Shore (Book 1)</h3>
+
               <div className={styles.bookDescription}>
                 <p>
-                  Ryan Blake didn&apos;t come to the Outer Banks looking for love.
-                </p>
-                <p>
-                  She came for quiet, for space to breathe after years of running from heartbreak, from her past, and from herself. But the shore has a way of pulling truths to the surface, and when she breaks down on the side of the road, it&apos;s Cody Calloway who shows up. The boy she once knew. But now he&apos;s the man she can&apos;t seem to forget.
-                </p>
-                <p>
-                  Cody has already lost once. He buried the love of his life, and with her, the future he thought he&apos;d have. Yet when Ryan stumbles back into his world, with her sharp wit, wild spirit, and haunted eyes, something shifts. She makes him want again. She makes him believe.
-                </p>
-                <p>
-                  But second chances don&apos;t come without ghosts. Between old scars and new temptations, between the weight of the past and the fragile hope of tomorrow, Ryan and Cody will have to fight. For honesty. For healing. For the kind of love that doesn&apos;t let go.
-                </p>
-                <p>
-                  On these Carolina shores, where waves break and begin again, two people discover that sometimes the hardest battles lead to the sweetest homecoming.
+                  Ryan Blake came to the Outer Banks for the quiet. She wasn&apos;t looking for Cody Calloway, the steady, charismatic man who shows up when her car breaks down and refuses to make a big deal out of it. Between the salt air and the people who become family before you realize it&apos;s happening, they find out the life they&apos;d stopped hoping for was waiting at the shore all along.
                 </p>
               </div>
 
-              <div className={styles.bookCategories}>
-                <span className={styles.categoryTag}>Contemporary Romance</span>
-                <span className={styles.categoryTag}>Small Town Romance</span>
-                <span className={styles.categoryTag}>Second Chance Romance</span>
-                <span className={styles.categoryTag}>Beach Romance</span>
-              </div>
-
-              <div className={styles.buyButtons}>
-                <a 
-                  href="https://www.amazon.com/gp/product/B0G1TXP2RD" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Kindle
-                </a>
-                <a 
-                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Paperback
-                </a>
-                <a 
-                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Hardcover
-                </a>
-              </div>
-              <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
               <Link href="/books/the-shore" className={styles.bookPageLink}>
                 More About The Shore
               </Link>
@@ -127,61 +55,21 @@ export default function Home() {
             <div className={styles.bookImageWrapper}>
               <Image
                 src="/For You - cover only.jpg"
-                alt="For You book cover"
+                alt="Cover of For You by S.E. Brown"
                 width={400}
                 height={600}
                 className={styles.bookImage}
               />
             </div>
             <div className={styles.bookContent}>
-              <h3 className={styles.bookTitle}>For You</h3>
-              
+              <h3 className={styles.bookTitle}>For You (Book 2)</h3>
+
               <div className={styles.bookDescription}>
                 <p>
-                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit, guarded smile, and string of one-night stands have always kept her safe from the mess love leaves behind. But when her past collides with her present, Madison discovers that the truth she&apos;s buried isn&apos;t something she can outrun.
-                </p>
-                <p>
-                  Declan Healy isn&apos;t just the man who sees through her armor, he&apos;s the one willing to stand there when it all comes crashing down. With him, Madison finds laughter in the silence, tenderness in the storm, and a passion that makes her question everything she thought she knew about love.
-                </p>
-                <p>
-                  As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn&apos;t just want tonight, she wants forever.
+                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit and guarded smile have kept her safe from the mess love leaves behind, until Declan Healy, the one man who sees through her armor and stays anyway. As old secrets rise and new ties take root, Madison has to decide if she can trust him with more than just tonight.
                 </p>
               </div>
 
-              <div className={styles.bookCategories}>
-                <span className={styles.categoryTag}>Contemporary Romance</span>
-                <span className={styles.categoryTag}>Friends to Lovers</span>
-                <span className={styles.categoryTag}>Slow Burn Romance</span>
-                <span className={styles.categoryTag}>Beach Town Romance</span>
-              </div>
-
-              <div className={styles.buyButtons}>
-                <a 
-                  href="https://www.amazon.com/You-Shore-Book-2-ebook/dp/B0G1Y6TGR9" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Kindle
-                </a>
-                <a 
-                  href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Paperback
-                </a>
-                <a 
-                  href="https://www.amazon.com/gp/product/B0G1YMPSQ6" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Hardcover
-                </a>
-              </div>
-              <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
               <Link href="/books/for-you" className={styles.bookPageLink}>
                 More About For You
               </Link>
@@ -196,11 +84,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section — removed from homepage; full version lives on /about.
       <section className={styles.aboutSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>About the Author</h2>
-          
+
           <div className={styles.aboutContent}>
             <div className={styles.aboutImageWrapper}>
               <Image
@@ -212,7 +100,7 @@ export default function Home() {
               />
               <p className={styles.aboutPhotoCredit}>Author photo by Brooke Eppa.</p>
             </div>
-            
+
             <div className={styles.aboutTextContent}>
               <p className={styles.aboutIntro}>
                 S.E. Brown is a
@@ -245,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
     </main>
   )
 }

@@ -21,70 +21,119 @@ export default function TheShore() {
       {/* Book Section */}
       <section className={styles.bookSection}>
         <div className={styles.container}>
-          <div className={styles.bookCard}>
+          <div className={styles.bookDetails}>
             <div className={styles.bookImageWrapper}>
               <Image
                 src="/The Shore - cover only.jpg"
                 alt="The Shore book cover"
-                width={400}
-                height={600}
+                width={500}
+                height={750}
                 className={styles.bookImage}
                 priority
               />
             </div>
-            <div className={styles.bookContent}>
-              <div className={styles.bookDescription}>
-                <p>
-                  Ryan Blake didn&apos;t come to the Outer Banks looking for love.
-                </p>
-                <p>
-                  She came for quiet, for space to breathe after years of running from heartbreak, from her past, and from herself. But the shore has a way of pulling truths to the surface, and when she breaks down on the side of the road, it&apos;s Cody Calloway who shows up. The boy she once knew. But now he&apos;s the man she can&apos;t seem to forget.
-                </p>
-                <p>
-                  Cody has already lost once. He buried the love of his life, and with her, the future he thought he&apos;d have. Yet when Ryan stumbles back into his world, with her sharp wit, wild spirit, and haunted eyes, something shifts. She makes him want again. She makes him believe.
-                </p>
-                <p>
-                  But second chances don&apos;t come without ghosts. Between old scars and new temptations, between the weight of the past and the fragile hope of tomorrow, Ryan and Cody will have to fight. For honesty. For healing. For the kind of love that doesn&apos;t let go.
-                </p>
-                <p>
-                  On these Carolina shores, where waves break and begin again, two people discover that sometimes the hardest battles lead to the sweetest homecoming.
-                </p>
+
+            <div className={styles.bookInfo}>
+              <div className={styles.descriptionSection}>
+                <div className={styles.bookNumber}>Book 1</div>
+                <h2 className={styles.sectionHeading}>About the Book</h2>
+                <div className={styles.description}>
+                  <p>
+                    Some people come to the Outer Banks for the sand and surf. Ryan Blake came for the quiet.
+                  </p>
+                  <p>
+                    After running from heartbreak, she wasn&apos;t looking for love. She certainly wasn&apos;t looking for Cody Calloway, the steady, charismatic man who shows up when her car breaks down and refuses to make a big deal out of it.
+                  </p>
+                  <p>
+                    Cody has spent years building something solid from his own loss. He wasn&apos;t looking either. But Ryan has a way of finding the cracks in walls people think are permanent.
+                  </p>
+                  <p>
+                    Between the salt air and the string lights, between the people who become family before you realize it&apos;s happening, Ryan and Cody discover that sometimes the life you stopped hoping for has been waiting at the shore all along.
+                  </p>
+                  <p>
+                    The Shore Series begins here.
+                  </p>
+                </div>
               </div>
 
-              <div className={styles.bookCategories}>
-                <span className={styles.categoryTag}>Contemporary Romance</span>
-                <span className={styles.categoryTag}>Small Town Romance</span>
-                <span className={styles.categoryTag}>Second Chance Romance</span>
-                <span className={styles.categoryTag}>Beach Romance</span>
+              <div className={styles.charactersSection}>
+                <h2 className={styles.sectionHeading}>The Characters</h2>
+                <div className={styles.characters}>
+                  <div className={styles.character}>
+                    <h3 className={styles.characterName}>Ryan Blake</h3>
+                    <p className={styles.characterDesc}>
+                      A woman running from her past seeks solace on the Outer Banks. Sharp-witted, independent,
+                      and haunted by heartbreak, she&apos;s determined to build a new life, alone. But the shore has
+                      other plans.
+                    </p>
+                  </div>
+                  <div className={styles.character}>
+                    <h3 className={styles.characterName}>Cody Calloway</h3>
+                    <p className={styles.characterDesc}>
+                      A man who&apos;s already lost the love of his life. Grief has shaped him, but when Ryan returns,
+                      he finds himself wanting to believe in second chances, and in a future he thought was gone forever.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className={styles.buyButtons}>
-                <a
-                  href="https://www.amazon.com/gp/product/B0G1TXP2RD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Kindle
-                </a>
-                <a
-                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Paperback
-                </a>
-                <a
-                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Hardcover
-                </a>
+              <div className={styles.themesSection}>
+                <h2 className={styles.sectionHeading}>Themes & Tropes</h2>
+                <div className={styles.themeList}>
+                  <span className={styles.themeTag}>Second Chance Romance</span>
+                  <span className={styles.themeTag}>Grief & Healing</span>
+                  <span className={styles.themeTag}>Small Town Romance</span>
+                  <span className={styles.themeTag}>Beach Setting</span>
+                  <span className={styles.themeTag}>Found Family</span>
+                  <span className={styles.themeTag}>Emotional Journey</span>
+                  <span className={styles.themeTag}>Slow Burn</span>
+                  <span className={styles.themeTag}>Strong Heroine</span>
+                </div>
               </div>
-              <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+
+              <div className={styles.categoriesSection}>
+                <h2 className={styles.sectionHeading}>Categories</h2>
+                <div className={styles.categories}>
+                  <span className={styles.categoryTag}>Contemporary Romance</span>
+                  <span className={styles.categoryTag}>Small Town Romance</span>
+                  <span className={styles.categoryTag}>Second Chance Romance</span>
+                  <span className={styles.categoryTag}>Beach Romance</span>
+                  <span className={styles.categoryTag}>Emotional Romance</span>
+                  <span className={styles.categoryTag}>Found Family</span>
+                </div>
+              </div>
+
+              <div className={styles.buySection}>
+                <h2 className={styles.sectionHeading}>Get Your Copy</h2>
+                <div className={styles.buyButtons}>
+                  <a
+                    href="https://www.amazon.com/gp/product/B0G1TXP2RD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.buyButton}
+                  >
+                    Kindle
+                  </a>
+                  <a
+                    href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.buyButton}
+                  >
+                    Paperback
+                  </a>
+                  <a
+                    href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.buyButton}
+                  >
+                    Hardcover
+                  </a>
+                </div>
+                <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+              </div>
+
               <Link href="/books/the-shore/content-warnings" className={styles.contentWarningLink}>
                 Content Warnings
               </Link>

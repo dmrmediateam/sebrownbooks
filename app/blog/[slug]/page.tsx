@@ -94,8 +94,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               Check out The Shore Series, where love finds its way home on the Carolina coast.
             </p>
             <div className={styles.ctaButtons}>
-              <Link href="/books" className={styles.ctaButton}>
-                View All Books
+              <Link href="/books/the-shore" className={styles.ctaButton}>
+                Start with The Shore
               </Link>
               <Link href="/" className={styles.ctaButtonSecondary}>
                 Visit Home
