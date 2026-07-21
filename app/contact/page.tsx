@@ -16,7 +16,7 @@ export default function ContactPage() {
             <h1 className={styles.title}>Contact</h1>
             <p className={styles.intro}>
               Have a question about a book, a content note, or just want to say hello? Send a
-              message — I read every one.
+              message. I read every one.
             </p>
           </div>
 

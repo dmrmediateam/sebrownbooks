@@ -7,6 +7,9 @@ import Footer from './components/Footer'
 export const metadata: Metadata = {
   title: 'SE Brown Books',
   description: 'SE Brown Books - Author Website',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 const GA_MEASUREMENT_ID = 'G-753SVKMVB1'
