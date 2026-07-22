@@ -8,6 +8,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/studio',
+        destination: 'https://sebrownbooks.sanity.studio',
+        statusCode: 301,
+      },
     ]
   },
 }

@@ -1,18 +1,12 @@
 import Link from 'next/link'
 import styles from './page.module.css'
+import { getAllBlogPosts } from '@/lib/blog'
 
-// Blog posts data (will be replaced with Sanity CMS later)
-const blogPosts = [
-  {
-    slug: 'top-5-small-town-romance-books',
-    title: 'Top 5 Small Town Romance Books You Need to Read',
-    excerpt: 'Discover the best small town romance novels that will sweep you off your feet, from coastal Carolina shores to charming mountain towns.',
-    date: '2024-11-30',
-    category: 'Book Recommendations',
-  },
-]
+export const revalidate = 60
 
-export default function Blog() {
+export default async function Blog() {
+  const blogPosts = await getAllBlogPosts()
+
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
@@ -26,29 +20,33 @@ export default function Blog() {
 
       <section className={styles.postsSection}>
         <div className={styles.container}>
-          <div className={styles.postsGrid}>
-            {blogPosts.map((post) => (
-              <article key={post.slug} className={styles.postCard}>
-                <div className={styles.postMeta}>
-                  <span className={styles.category}>{post.category}</span>
-                  <time className={styles.date} dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
-                </div>
-                <h2 className={styles.postTitle}>
-                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                </h2>
-                <p className={styles.postExcerpt}>{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className={styles.readMore}>
-                  Read More →
-                </Link>
-              </article>
-            ))}
-          </div>
+          {blogPosts.length > 0 ? (
+            <div className={styles.postsGrid}>
+              {blogPosts.map((post) => (
+                <article key={post._id} className={styles.postCard}>
+                  <div className={styles.postMeta}>
+                    <span className={styles.category}>{post.category}</span>
+                    <time className={styles.date} dateTime={post.publishedAt}>
+                      {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                  </div>
+                  <h2 className={styles.postTitle}>
+                    <Link href={`/blog/${post.slug.current}`}>{post.title}</Link>
+                  </h2>
+                  <p className={styles.postExcerpt}>{post.description}</p>
+                  <Link href={`/blog/${post.slug.current}`} className={styles.readMore}>
+                    Read More →
+                  </Link>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className={styles.postExcerpt}>New posts are coming soon — check back shortly!</p>
+          )}
         </div>
       </section>
     </main>

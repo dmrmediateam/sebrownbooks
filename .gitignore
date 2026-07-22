@@ -41,3 +41,7 @@ next-env.d.ts
 *.eps
 *shutterstock*
 
+
+# Sanity studio build output
+/dist
+/.sanity
