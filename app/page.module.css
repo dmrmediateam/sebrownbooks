@@ -119,6 +119,10 @@
   font-weight: 300;
 }
 
+.bookDescription strong {
+  font-weight: 600;
+}
+
 .amazonDescription {
   margin-top: 1rem;
   padding-top: 1.5rem;
@@ -216,26 +220,6 @@
 }
 
 /* Coming Soon */
-.comingSoon {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-accent-blue) 100%);
-  border-radius: 12px;
-  color: var(--color-off-white);
-}
-
-.comingSoonTitle {
-  font-size: clamp(2.4rem, 4.8vw, 3rem);
-  margin-bottom: 1rem;
-  color: var(--color-off-white);
-}
-
-.comingSoonText {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  font-weight: 300;
-  color: var(--color-off-white);
-}
-
 /* About Section */
 .aboutSection {
   padding: 5rem 2rem;

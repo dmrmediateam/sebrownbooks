@@ -76,10 +76,29 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Coming Soon */}
-          <div className={styles.comingSoon}>
-            <h3 className={styles.comingSoonTitle}>Beside Us</h3>
-            <p className={styles.comingSoonText}>Coming 2026</p>
+          {/* Book 3: Beside Us */}
+          <div className={styles.bookCard}>
+            <div className={styles.bookImageWrapper}>
+              <Image
+                src="/Beside-Us-CoverComingSoon.jpg"
+                alt="Cover of Beside Us by S.E. Brown"
+                width={400}
+                height={600}
+                className={styles.bookImage}
+              />
+            </div>
+            <div className={styles.bookContent}>
+              <h3 className={styles.bookTitle}>Beside Us (Book 3)</h3>
+
+              <div className={styles.bookDescription}>
+                <p>
+                  Abby Maxwell spent ten years building a life she never expected to have. Then Luke Keil quietly changed everything. But when the past comes looking, threatening everything she&apos;s fought to protect, Abby must decide if she&apos;s ready to believe that some people really do stay.
+                </p>
+                <p>
+                  <strong>Coming September 2026</strong>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
