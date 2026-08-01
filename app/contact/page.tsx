@@ -3,8 +3,8 @@ import ContactForm from '../components/ContactForm'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Contact | S.E. Brown Books',
-  description: 'Get in touch with S.E. Brown — reader notes, book questions, and collaboration inquiries welcome.',
+  title: 'Contact | S.E. Brown',
+  description: 'Get in touch with S.E. Brown for reader questions, book clubs, author services, media inquiries, or just to say hello.',
 }
 
 export default function ContactPage() {

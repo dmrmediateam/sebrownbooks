@@ -1,0 +1,234 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
+  color: var(--color-off-white);
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 1rem;
+  color: var(--color-off-white);
+  font-weight: 400;
+}
+
+.heroTagline {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.8;
+  color: rgba(245, 245, 240, 0.95);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Book Section */
+.bookSection {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bookNumber {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.bookDetails {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.bookImageWrapper {
+  position: sticky;
+  top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(26, 42, 58, 0.15);
+  object-fit: cover;
+  border: 1px solid rgba(26, 42, 58, 0.1);
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.chapterText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.chapterText p {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.9;
+  color: var(--color-text-primary);
+  font-weight: 300;
+}
+
+/* Buy Stack (below cover image) */
+.buyStackHeading {
+  font-size: clamp(1.75rem, 3.5vw, 2.1rem);
+  color: var(--color-dark-blue);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.buyStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.buyButton {
+  padding: 0.75rem 1rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.buyButton:hover {
+  background-color: var(--color-accent-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 42, 58, 0.3);
+}
+
+.kindleUnlimited {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-accent-blue);
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Get Your Copy (bottom of text column) */
+.buySection {
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-accent-blue) 100%);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: clamp(2.16rem, 4.32vw, 2.88rem);
+  color: var(--color-off-white);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(245, 245, 240, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.buyButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.bottomBuyButton {
+  padding: 1rem 2.5rem;
+  background-color: var(--color-off-white);
+  color: var(--color-dark-blue);
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bottomBuyButton:hover {
+  background-color: rgba(245, 245, 240, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 245, 240, 0.3);
+}
+
+.bottomKindleUnlimited {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(245, 245, 240, 0.9);
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .bookDetails {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .bookImageWrapper {
+    position: relative;
+    top: 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .bookSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .bookInfo {
+    gap: 2rem;
+  }
+
+  .buyButtons {
+    flex-direction: column;
+  }
+
+  .bottomBuyButton {
+    width: 100%;
+  }
+}

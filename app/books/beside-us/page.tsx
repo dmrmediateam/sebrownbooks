@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'Beside Us | S.E. Brown Books',
+  description: 'Beside Us is the emotional conclusion to The Shore Series, where Abby and Luke discover that love is worth fighting for, even when the past refuses to let go.',
+}
 
 export default function BesideUs() {
   return (

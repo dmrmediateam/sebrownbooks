@@ -1,5 +1,11 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'About | S.E. Brown',
+  description: 'Meet S.E. Brown, author of heartfelt contemporary romance novels inspired by friendship, found family, and the moments that change our lives forever.',
+}
 
 export default function About() {
   return (
@@ -18,7 +24,6 @@ export default function About() {
                 className={styles.authorImage}
                 priority
               />
-              <p className={styles.photoCredit}>Author photo by Brooke Eppa.</p>
             </div>
             
             <div className={styles.textContent}>

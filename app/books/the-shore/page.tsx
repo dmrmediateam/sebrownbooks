@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'The Shore | S.E. Brown Books',
+  description: "The Shore is a contemporary romance set in North Carolina's Outer Banks, where friendship runs deep, found family heals old wounds, and love arrives when it's needed most.",
+}
 
 export default function TheShore() {
   return (

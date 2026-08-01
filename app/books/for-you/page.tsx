@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'For You | S.E. Brown Books',
+  description: "For You is a heartfelt contemporary romance set in North Carolina's Outer Banks, where forgiveness, family, and unexpected love prove it's never too late for a second chance.",
+}
 
 export default function ForYou() {
   return (

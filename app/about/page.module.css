@@ -43,13 +43,6 @@
   margin-bottom: 1rem;
 }
 
-.photoCredit {
-  font-size: 0.875rem;
-  color: var(--color-accent-blue);
-  font-style: italic;
-  text-align: center;
-}
-
 .textContent {
   display: flex;
   flex-direction: column;

@@ -1,6 +1,12 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'S.E. Brown Books',
+  description: 'Welcome to S.E. Brown Books, home of heartfelt contemporary romance novels featuring friendship, found family, second chances, and unforgettable happily ever afters.',
+}
 
 export default function Home() {
   return (

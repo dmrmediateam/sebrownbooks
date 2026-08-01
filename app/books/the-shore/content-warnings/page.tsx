@@ -1,5 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'The Shore Content Warnings | S.E. Brown Books',
+  description: 'Review the content warnings for The Shore before reading. This page contains spoiler-free information to help you decide if the story is right for you.',
+}
 
 export default function TheShoreContentWarnings() {
   return (

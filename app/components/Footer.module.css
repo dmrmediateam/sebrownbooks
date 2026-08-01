@@ -105,6 +105,8 @@
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
+  width: 50%;
+  align-self: center;
 }
 
 .newsletterButton:hover:not(:disabled) {
@@ -230,6 +232,10 @@
 
   .newsletterFields {
     grid-template-columns: 1fr;
+  }
+
+  .newsletterButton {
+    width: 100%;
   }
 
   .links {
