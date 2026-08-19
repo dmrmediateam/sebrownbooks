@@ -16,7 +16,7 @@ export default function ForYou() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>For You</h1>
           <p className={styles.heroTagline}>
-            She never believed in forever. Until him.
+            She didn&apos;t believe in forever. Until him.
           </p>
         </div>
       </section>
@@ -26,14 +26,42 @@ export default function ForYou() {
         <div className={styles.container}>
           <div className={styles.bookDetails}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/For You - cover only.jpg"
-                alt="For You book cover"
-                width={500}
-                height={750}
-                className={styles.bookImage}
-                priority
-              />
+              <Link href="/books/for-you" className={styles.coverLink}>
+                <Image
+                  src="/ForYou-cover.jpg"
+                  alt="For You book cover"
+                  width={500}
+                  height={750}
+                  className={styles.bookImage}
+                  priority
+                />
+              </Link>
+              <div className={styles.sidebarCategories}>
+                <p>Friends to Lovers</p>
+                <p>• Found Family •</p>
+                <p>Emotional Romance</p>
+              </div>
+              <hr className={styles.sidebarDivider} />
+              <div className={styles.buyStack}>
+                <h2 className={styles.buyStackHeading}>Choose Your Format</h2>
+                <a
+                  href="https://www.amazon.com/You-Shore-Book-2-ebook/dp/B0G1Y6TGR9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Kindle eBook
+                </a>
+                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
+                <a
+                  href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Paperback
+                </a>
+              </div>
             </div>
 
             <div className={styles.bookInfo}>
@@ -51,6 +79,9 @@ export default function ForYou() {
                     As old secrets rise and new ties take root, Madison has to decide if she can trust Declan not only with her body but with her heart. Because with him, she doesn&apos;t just want tonight, she wants forever.
                   </p>
                 </div>
+                <Link href="/books/for-you/chapter-1" className={`${styles.outlineButton} ${styles.chapterButton}`}>
+                  Read Chapter 1
+                </Link>
               </div>
 
               <div className={styles.charactersSection}>
@@ -61,56 +92,55 @@ export default function ForYou() {
                     <p className={styles.characterDesc}>
                       Bright and a little chaotic, Madison uses charm and one-night stands to keep anyone from
                       getting close enough to hurt her. She&apos;s the friend who always has a comeback ready and
-                      never lets the conversation get too serious. But underneath the jokes is someone still
+                      a joke waiting whenever things get too serious. But underneath the jokes is someone still
                       running from a past she hasn&apos;t dealt with.
                     </p>
                   </div>
                   <div className={styles.character}>
                     <h3 className={styles.characterName}>Declan Healy</h3>
                     <p className={styles.characterDesc}>
-                      Patient and steady, Declan doesn&apos;t push. He&apos;s the kind of man who notices what people
-                      don&apos;t say and sticks around anyway. With Madison, he&apos;s willing to wait her out, to stand
-                      there when her walls finally crack, and to prove that not everyone leaves when things get
-                      hard. He&apos;s not fixing her, he&apos;s just there.
+                      Declan runs two gyms and has spent most of his adult life building something worth being
+                      proud of. He&apos;s the kind of man who shows up, follows through, and doesn&apos;t say things he
+                      doesn&apos;t mean. He knows exactly who he is, and that&apos;s always been enough. He hasn&apos;t
+                      made much room for love. Nobody&apos;s ever made him want to.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className={styles.buySection}>
-                <h2 className={styles.sectionHeading}>Get Your Copy</h2>
-                <div className={styles.buyButtons}>
-                  <a
-                    href="https://www.amazon.com/You-Shore-Book-2-ebook/dp/B0G1Y6TGR9"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.buyButton}
-                  >
-                    Kindle
-                  </a>
-                  <a
-                    href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.buyButton}
-                  >
-                    Paperback
-                  </a>
-                  <a
-                    href="https://www.amazon.com/gp/product/B0G1YMPSQ6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.buyButton}
-                  >
-                    Hardcover
-                  </a>
-                </div>
-                <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
+              <div className={styles.beforeYouReadSection}>
+                <h2 className={styles.sectionHeading}>Before You Read</h2>
+                <p className={styles.beforeYouReadText}>
+                  If you&apos;d like to check the content warnings before you begin, you can view them here.
+                </p>
+                <Link href="/books/for-you/content-warnings" className={styles.outlineButton}>
+                  View Content Warnings
+                </Link>
               </div>
 
-              <Link href="/books/for-you/content-warnings" className={styles.contentWarningLink}>
-                Content Warnings
-              </Link>
+              <div className={styles.seriesSection}>
+                <h2 className={styles.sectionHeading}>Also in this Series</h2>
+                <div className={styles.seriesImages}>
+                  <Link href="/books/the-shore" className={styles.seriesCoverLink}>
+                    <Image
+                      src="/TheShore-cover.jpg"
+                      alt="The Shore book cover"
+                      width={100}
+                      height={150}
+                      className={styles.seriesCoverImage}
+                    />
+                  </Link>
+                  <Link href="/books/beside-us" className={styles.seriesCoverLink}>
+                    <Image
+                      src="/Beside-Us-CoverComingSoon.jpg"
+                      alt="Beside Us book cover"
+                      width={100}
+                      height={150}
+                      className={styles.seriesCoverImage}
+                    />
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -25,24 +26,27 @@ export default function ForYouChapterOne() {
         <div className={styles.container}>
           <div className={styles.bookDetails}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/For You - cover only.jpg"
-                alt="For You book cover"
-                width={500}
-                height={750}
-                className={styles.bookImage}
-                priority
-              />
+              <Link href="/books/for-you" className={styles.coverLink}>
+                <Image
+                  src="/ForYou-cover.jpg"
+                  alt="For You book cover"
+                  width={500}
+                  height={750}
+                  className={styles.bookImage}
+                  priority
+                />
+              </Link>
               <div className={styles.buyStack}>
-                <h2 className={styles.buyStackHeading}>Get Your Copy</h2>
+                <h2 className={styles.buyStackHeading}>Choose Your Format</h2>
                 <a
                   href="https://www.amazon.com/You-Shore-Book-2-ebook/dp/B0G1Y6TGR9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.buyButton}
                 >
-                  Kindle
+                  Kindle eBook
                 </a>
+                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
                 <a
                   href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J"
                   target="_blank"
@@ -51,15 +55,6 @@ export default function ForYouChapterOne() {
                 >
                   Paperback
                 </a>
-                <a
-                  href="https://www.amazon.com/gp/product/B0G1YMPSQ6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Hardcover
-                </a>
-                <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
               </div>
             </div>
 
@@ -324,14 +319,6 @@ export default function ForYouChapterOne() {
                     className={styles.bottomBuyButton}
                   >
                     Paperback
-                  </a>
-                  <a
-                    href="https://www.amazon.com/gp/product/B0G1YMPSQ6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.bottomBuyButton}
-                  >
-                    Hardcover
                   </a>
                 </div>
                 <p className={styles.bottomKindleUnlimited}>Available on Kindle Unlimited</p>

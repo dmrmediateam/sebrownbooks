@@ -55,7 +55,7 @@ export default function NewsletterForm() {
 
   return (
     <div className={styles.newsletter}>
-      <h2 className={styles.newsletterTitle}>Stay in the loop</h2>
+      <h2 className={styles.newsletterTitle}>Stay in the Loop</h2>
       <p className={styles.newsletterText}>
         Be the first to know about new releases, cover reveals, and an honest look at the indie
         author life.

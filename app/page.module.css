@@ -31,6 +31,23 @@
   font-weight: 300;
 }
 
+/* Series Coming Soon Image */
+.seriesImageSection {
+  width: 100%;
+  padding-top: 4rem;
+  background-color: var(--color-bg-primary);
+}
+
+.seriesComingImage {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(26, 42, 58, 0.08);
+}
+
 /* Books Section */
 .booksSection {
   padding: 5rem 2rem;
@@ -44,9 +61,33 @@
 
 .sectionTitle {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
   font-size: clamp(3rem, 6vw, 4.2rem);
   color: var(--color-dark-blue);
+}
+
+.sectionTagline {
+  max-width: 750px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--color-accent-blue);
+  font-weight: 300;
+}
+
+.sectionTagline strong {
+  font-weight: 600;
+}
+
+.sectionIntro {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  font-weight: 300;
 }
 
 /* Book Card */
@@ -74,6 +115,10 @@
   height: 100%;
   display: flex;
   justify-content: center;
+}
+
+.coverLink {
+  display: block;
 }
 
 .bookImage {
@@ -152,7 +197,7 @@
 
 .categoryTag {
   padding: 0.5rem 1rem;
-  background-color: var(--color-dark-blue);
+  background-color: #7B3545;
   color: var(--color-off-white);
   border-radius: 20px;
   font-size: 0.875rem;
@@ -192,7 +237,7 @@
 
 .kindleUnlimited {
   margin-top: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   font-style: italic;
   color: var(--color-accent-blue);
   font-weight: 400;

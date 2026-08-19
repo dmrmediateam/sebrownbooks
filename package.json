@@ -10,6 +10,10 @@
     "sanity": "sanity dev"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
     "@portabletext/react": "^3.2.4",
     "@sanity/image-url": "^1.2.0",
     "@sanity/vision": "^3.99.0",

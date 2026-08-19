@@ -10,10 +10,15 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className={styles.main}>
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>Contact Me</h1>
+        </div>
+      </section>
+
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <h1 className={styles.title}>Contact</h1>
             <p className={styles.intro}>
               Have a question about a book, a content note, or just want to say hello? Send a
               message. I read every one.

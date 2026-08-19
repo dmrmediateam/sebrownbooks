@@ -14,44 +14,62 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>The Shore Series</h1>
+          <h1 className={styles.heroTitle}>S.E. Brown Books</h1>
           <p className={styles.heroText}>
-            <i>Some people come to the Outer Banks for the sand and surf. The people who stay find something they weren&apos;t looking for.</i>
-          </p>
-          <p className={styles.heroText}>
-            The Shore Series is a contemporary small-town romance set on North Carolina&apos;s Outer Banks, following the found family of friends who become each other&apos;s anchors through heartbreak, second chances, and the slow work of choosing to stay. If you love slow-burn romance, small-town settings, and found family stories where the whole friend group gets its own happy ending, you&apos;re in the right place.
+            Small-town romance with found family, heart, and a little heat.
           </p>
         </div>
+      </section>
+
+      {/* Series Coming Soon Image */}
+      <section className={styles.seriesImageSection}>
+        <Image
+          src="/the-shore-series-coming.png"
+          alt="The Shore Series, including The Shore, For You, and Beside Us, which will be coming soon."
+          width={2500}
+          height={1313}
+          className={styles.seriesComingImage}
+          priority
+        />
       </section>
 
       {/* Books Section */}
       <section className={styles.booksSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>The Shore Series</h2>
+          <p className={styles.sectionTagline}>
+            <strong><i>Some people come to the Outer Banks for the sand and surf.<br />
+            The people who stay find something they weren&apos;t looking for.</i></strong>
+          </p>
+          <p className={styles.sectionIntro}>
+            The Shore Series is a contemporary small-town romance set on North Carolina&apos;s Outer Banks, following a found family of friends who become each other&apos;s anchors through heartbreak, second chances, and the slow work of choosing to stay. If you love slow-burn romance, coastal settings, and found family stories where every couple gets their happily ever after, you&apos;re in the right place.
+          </p>
 
           {/* Book 1: The Shore */}
           <div className={styles.bookCard}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/The Shore - cover only.jpg"
-                alt="Cover of The Shore by S.E. Brown"
-                width={400}
-                height={600}
-                className={styles.bookImage}
-                priority
-              />
+              <Link href="/books/the-shore" className={styles.coverLink}>
+                <Image
+                  src="/TheShore-cover.jpg"
+                  alt="Cover of The Shore by S.E. Brown"
+                  width={400}
+                  height={600}
+                  className={styles.bookImage}
+                  priority
+                />
+              </Link>
             </div>
             <div className={styles.bookContent}>
               <h3 className={styles.bookTitle}>The Shore (Book 1)</h3>
 
               <div className={styles.bookDescription}>
                 <p>
-                  Ryan Blake came to the Outer Banks for the quiet. She wasn&apos;t looking for Cody Calloway, the steady, charismatic man who shows up when her car breaks down and refuses to make a big deal out of it. Between the salt air and the people who become family before you realize it&apos;s happening, they find out the life they&apos;d stopped hoping for was waiting at the shore all along.
+                  Ryan Blake came to the Outer Banks looking for quiet. Cody Calloway wasn&apos;t looking for anything at all. But between the salt air, found family, and unexpected love, they discover that sometimes home is the place you never planned to stay.
                 </p>
               </div>
 
               <Link href="/books/the-shore" className={styles.bookPageLink}>
-                More About The Shore
+                More About <i>The Shore</i>
               </Link>
             </div>
           </div>
@@ -59,25 +77,27 @@ export default function Home() {
           {/* Book 2: For You */}
           <div className={styles.bookCard}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/For You - cover only.jpg"
-                alt="Cover of For You by S.E. Brown"
-                width={400}
-                height={600}
-                className={styles.bookImage}
-              />
+              <Link href="/books/for-you" className={styles.coverLink}>
+                <Image
+                  src="/ForYou-cover.jpg"
+                  alt="Cover of For You by S.E. Brown"
+                  width={400}
+                  height={600}
+                  className={styles.bookImage}
+                />
+              </Link>
             </div>
             <div className={styles.bookContent}>
               <h3 className={styles.bookTitle}>For You (Book 2)</h3>
 
               <div className={styles.bookDescription}>
                 <p>
-                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit and guarded smile have kept her safe from the mess love leaves behind, until Declan Healy, the one man who sees through her armor and stays anyway. As old secrets rise and new ties take root, Madison has to decide if she can trust him with more than just tonight.
+                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit and guarded smile have kept her safe from the mess love leaves behind, until Declan Healy, the one man who sees through her armor and stays anyway. As old secrets rise and new ties take root, Madison has to decide if she&apos;s willing to risk the one thing she&apos;s spent years avoiding.
                 </p>
               </div>
 
               <Link href="/books/for-you" className={styles.bookPageLink}>
-                More About For You
+                More About <i>For You</i>
               </Link>
             </div>
           </div>
@@ -85,25 +105,31 @@ export default function Home() {
           {/* Book 3: Beside Us */}
           <div className={styles.bookCard}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/Beside-Us-CoverComingSoon.jpg"
-                alt="Cover of Beside Us by S.E. Brown"
-                width={400}
-                height={600}
-                className={styles.bookImage}
-              />
+              <Link href="/books/beside-us" className={styles.coverLink}>
+                <Image
+                  src="/Beside-Us-CoverComingSoon.jpg"
+                  alt="Cover of Beside Us by S.E. Brown"
+                  width={400}
+                  height={600}
+                  className={styles.bookImage}
+                />
+              </Link>
             </div>
             <div className={styles.bookContent}>
               <h3 className={styles.bookTitle}>Beside Us (Book 3)</h3>
 
               <div className={styles.bookDescription}>
                 <p>
-                  Abby Maxwell spent ten years building a life she never expected to have. Then Luke Keil quietly changed everything. But when the past comes looking, threatening everything she&apos;s fought to protect, Abby must decide if she&apos;s ready to believe that some people really do stay.
+                  Abby Maxwell built a life she loves, one that finally feels safe for both her and her son. Luke Keil isn&apos;t interested in changing that. He simply wants to be part of it. Together, they&apos;re learning that the hardest part of love isn&apos;t falling. It&apos;s deciding, every single day, to stay.
                 </p>
                 <p>
                   <strong>Coming September 2026</strong>
                 </p>
               </div>
+
+              <Link href="/books/beside-us" className={styles.bookPageLink}>
+                More about <i>Beside Us</i>
+              </Link>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ export default async function Blog() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Blog</h1>
           <p className={styles.heroSubtitle}>
-            Stories, recommendations, and insights from the world of romance
+            Stories, recommendations, and insights from the world of romance.
           </p>
         </div>
       </section>

@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+
+config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: 'SE Brown Books',

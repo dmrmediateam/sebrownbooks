@@ -19,7 +19,7 @@
 
 .newsletter {
   width: 100%;
-  max-width: 640px;
+  max-width: 720px;
   text-align: center;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(245, 245, 240, 0.2);
@@ -180,35 +180,22 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding-top: 1rem;
+  margin-top: -0.5rem;
 }
 
 .socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-off-white);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.375rem;
   text-decoration: none;
-  transition: color 0.3s ease;
-  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .socialLink:hover {
   color: rgba(245, 245, 240, 0.8);
-}
-
-.socialLink::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--color-off-white);
-  transition: width 0.3s ease;
-}
-
-.socialLink:hover::after {
-  width: 100%;
+  transform: translateY(-2px);
 }
 
 .copyright {

@@ -1,7 +1,25 @@
 .main {
-  min-height: 100vh;
   width: 100%;
   background-color: var(--color-bg-primary);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
+  color: var(--color-off-white);
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-off-white);
+  font-weight: 400;
 }
 
 .aboutSection {
@@ -11,13 +29,6 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.title {
-  text-align: center;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  color: var(--color-dark-blue);
-  margin-bottom: 4rem;
 }
 
 .content {
@@ -93,12 +104,12 @@
 }
 
 @media (max-width: 640px) {
-  .aboutSection {
-    padding: 3rem 1.5rem;
+  .hero {
+    padding: 4rem 1.5rem 3rem;
   }
 
-  .title {
-    margin-bottom: 2rem;
+  .aboutSection {
+    padding: 3rem 1.5rem;
   }
 }
 

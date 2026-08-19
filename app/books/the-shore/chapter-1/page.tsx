@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -25,24 +26,27 @@ export default function TheShoreChapterOne() {
         <div className={styles.container}>
           <div className={styles.bookDetails}>
             <div className={styles.bookImageWrapper}>
-              <Image
-                src="/The Shore - cover only.jpg"
-                alt="The Shore book cover"
-                width={500}
-                height={750}
-                className={styles.bookImage}
-                priority
-              />
+              <Link href="/books/the-shore" className={styles.coverLink}>
+                <Image
+                  src="/TheShore-cover.jpg"
+                  alt="The Shore book cover"
+                  width={500}
+                  height={750}
+                  className={styles.bookImage}
+                  priority
+                />
+              </Link>
               <div className={styles.buyStack}>
-                <h2 className={styles.buyStackHeading}>Get Your Copy</h2>
+                <h2 className={styles.buyStackHeading}>Choose Your Format</h2>
                 <a
                   href="https://www.amazon.com/gp/product/B0G1TXP2RD"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.buyButton}
                 >
-                  Kindle
+                  Kindle eBook
                 </a>
+                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
                 <a
                   href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T"
                   target="_blank"
@@ -51,15 +55,6 @@ export default function TheShoreChapterOne() {
                 >
                   Paperback
                 </a>
-                <a
-                  href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buyButton}
-                >
-                  Hardcover
-                </a>
-                <p className={styles.kindleUnlimited}>Available on Kindle Unlimited</p>
               </div>
             </div>
 
@@ -280,14 +275,6 @@ export default function TheShoreChapterOne() {
                     className={styles.bottomBuyButton}
                   >
                     Paperback
-                  </a>
-                  <a
-                    href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V1WJSY"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.bottomBuyButton}
-                  >
-                    Hardcover
                   </a>
                 </div>
                 <p className={styles.bottomKindleUnlimited}>Available on Kindle Unlimited</p>

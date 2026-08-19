@@ -10,10 +10,14 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <main className={styles.main}>
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>About the Author</h1>
+        </div>
+      </section>
+
       <section className={styles.aboutSection}>
         <div className={styles.container}>
-          <h1 className={styles.title}>About the Author</h1>
-          
           <div className={styles.content}>
             <div className={styles.imageWrapper}>
               <Image

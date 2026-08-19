@@ -1,4 +1,12 @@
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faFacebook,
+  faInstagram,
+  faTiktok,
+  faGoodreads,
+  faAmazon,
+} from '@fortawesome/free-brands-svg-icons'
 import NewsletterForm from './NewsletterForm'
 import styles from './Footer.module.css'
 
@@ -28,14 +36,14 @@ export default function Footer() {
             </Link>
           </div>
           <div className={styles.social}>
-            <a 
-              href="https://www.facebook.com/sebrownbooks" 
-              target="_blank" 
+            <a
+              href="https://www.facebook.com/sebrownbooks"
+              target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
               aria-label="Facebook"
             >
-              Facebook
+              <FontAwesomeIcon icon={faFacebook} aria-hidden="true" />
             </a>
             <a
               href="https://www.instagram.com/sebrownbooks/"
@@ -44,7 +52,7 @@ export default function Footer() {
               className={styles.socialLink}
               aria-label="Instagram"
             >
-              Instagram
+              <FontAwesomeIcon icon={faInstagram} aria-hidden="true" />
             </a>
             <a
               href="https://www.tiktok.com/@sebrownbooks"
@@ -53,7 +61,25 @@ export default function Footer() {
               className={styles.socialLink}
               aria-label="TikTok"
             >
-              TikTok
+              <FontAwesomeIcon icon={faTiktok} aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.goodreads.com/author/show/6425866.S_E_Brown"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Goodreads"
+            >
+              <FontAwesomeIcon icon={faGoodreads} aria-hidden="true" />
+            </a>
+            <a
+              href="https://www.amazon.com/stores/S.-E.-Brown/author/B00USQEU0M"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+              aria-label="Amazon"
+            >
+              <FontAwesomeIcon icon={faAmazon} aria-hidden="true" />
             </a>
           </div>
           <div className={styles.copyright}>

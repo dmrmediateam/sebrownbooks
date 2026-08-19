@@ -4,9 +4,14 @@ import styles from './page.module.css'
 export default function PrivacyPolicy() {
   return (
     <main className={styles.main}>
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>Privacy Policy</h1>
+        </div>
+      </section>
+
       <section className={styles.section}>
         <div className={styles.container}>
-          <h1 className={styles.title}>Privacy Policy</h1>
           <p className={styles.lastUpdated}>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
           <div className={styles.content}>
