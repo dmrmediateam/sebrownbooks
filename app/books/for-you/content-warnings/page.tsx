@@ -27,7 +27,7 @@ export default function ForYouContentWarnings() {
               <Link href="/books/for-you" className={styles.coverLink}>
                 <Image
                   src="/ForYou-cover.jpg"
-                  alt="For You book cover"
+                  alt="Cover of 'For You' by S.E. Brown"
                   width={500}
                   height={750}
                   className={styles.bookImage}

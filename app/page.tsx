@@ -24,10 +24,10 @@ export default function Home() {
       {/* Series Coming Soon Image */}
       <section className={styles.seriesImageSection}>
         <Image
-          src="/the-shore-series-coming.png"
-          alt="The Shore Series, including The Shore, For You, and Beside Us, which will be coming soon."
-          width={2500}
-          height={1313}
+          src="/the-shore-series.jpg"
+          alt="Covers of the Shore Series, including 'The Shore,' 'For You,' and 'Beside Us'"
+          width={1200}
+          height={630}
           className={styles.seriesComingImage}
           priority
         />
@@ -51,7 +51,7 @@ export default function Home() {
               <Link href="/books/the-shore" className={styles.coverLink}>
                 <Image
                   src="/TheShore-cover.jpg"
-                  alt="Cover of The Shore by S.E. Brown"
+                  alt="Cover of 'The Shore' by S.E. Brown"
                   width={400}
                   height={600}
                   className={styles.bookImage}
@@ -80,7 +80,7 @@ export default function Home() {
               <Link href="/books/for-you" className={styles.coverLink}>
                 <Image
                   src="/ForYou-cover.jpg"
-                  alt="Cover of For You by S.E. Brown"
+                  alt="Cover of 'For You' by S.E. Brown"
                   width={400}
                   height={600}
                   className={styles.bookImage}
@@ -107,8 +107,8 @@ export default function Home() {
             <div className={styles.bookImageWrapper}>
               <Link href="/books/beside-us" className={styles.coverLink}>
                 <Image
-                  src="/Beside-Us-CoverComingSoon.jpg"
-                  alt="Cover of Beside Us by S.E. Brown"
+                  src="/BesideUs-cover.jpg"
+                  alt="Cover of 'Beside Us' by S.E. Brown"
                   width={400}
                   height={600}
                   className={styles.bookImage}
@@ -123,7 +123,7 @@ export default function Home() {
                   Abby Maxwell built a life she loves, one that finally feels safe for both her and her son. Luke Keil isn&apos;t interested in changing that. He simply wants to be part of it. Together, they&apos;re learning that the hardest part of love isn&apos;t falling. It&apos;s deciding, every single day, to stay.
                 </p>
                 <p>
-                  <strong>Coming September 2026</strong>
+                  <strong>Release date: September 9</strong>
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export default function Home() {
             <div className={styles.aboutImageWrapper}>
               <Image
                 src="/Sus-LO.jpg"
-                alt="S.E. Brown"
+                alt="Relaxed image of author, S.E. Brown"
                 width={300}
                 height={300}
                 className={styles.aboutAuthorImage}

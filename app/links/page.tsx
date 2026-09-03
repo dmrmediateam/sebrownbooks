@@ -18,7 +18,7 @@ export default function Links() {
             <div className={styles.imageWrapper}>
               <Image
                 src="/Sus-LO.jpg"
-                alt="S.E. Brown"
+                alt="Relaxed image of author, S.E. Brown"
                 width={400}
                 height={400}
                 className={styles.authorImage}

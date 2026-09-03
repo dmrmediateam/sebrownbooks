@@ -28,14 +28,15 @@ export default function BesideUsChapterOne() {
             <div className={styles.bookImageWrapper}>
               <Link href="/books/beside-us" className={styles.coverLink}>
                 <Image
-                  src="/Beside-Us-CoverComingSoon.jpg"
-                  alt="Beside Us book cover"
+                  src="/BesideUs-cover.jpg"
+                  alt="Cover of 'Beside Us' by S.E. Brown"
                   width={500}
                   height={750}
                   className={styles.bookImage}
                   priority
                 />
               </Link>
+              <h2 className={styles.releaseDateHeading}>Release date: September 9</h2>
             </div>
 
             <div className={styles.bookInfo}>

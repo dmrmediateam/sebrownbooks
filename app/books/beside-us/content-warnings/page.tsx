@@ -26,8 +26,8 @@ export default function BesideUsContentWarnings() {
             <div className={styles.bookImageWrapper}>
               <Link href="/books/beside-us" className={styles.coverLink}>
                 <Image
-                  src="/Beside-Us-CoverComingSoon.jpg"
-                  alt="Beside Us book cover"
+                  src="/BesideUs-cover.jpg"
+                  alt="Cover of 'Beside Us' by S.E. Brown"
                   width={500}
                   height={750}
                   className={styles.bookImage}

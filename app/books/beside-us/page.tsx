@@ -27,8 +27,8 @@ export default function BesideUs() {
           <div className={styles.bookDetails}>
             <div className={styles.bookImageWrapper}>
               <Image
-                src="/Beside-Us-CoverComingSoon.jpg"
-                alt="Beside Us book cover"
+                src="/BesideUs-cover.jpg"
+                alt="Cover of 'Beside Us' by S.E. Brown"
                 width={500}
                 height={750}
                 className={styles.bookImage}
@@ -68,7 +68,7 @@ export default function BesideUs() {
                     It&apos;s about choosing them. Every single day.
                   </p>
                   <p>
-                    <strong>Coming September 2026</strong>
+                    <strong>Release date: September 9</strong>
                   </p>
                 </div>
                 <Link href="/books/beside-us/chapter-1" className={`${styles.outlineButton} ${styles.chapterButton}`}>
@@ -116,7 +116,7 @@ export default function BesideUs() {
                   <Link href="/books/the-shore" className={styles.seriesCoverLink}>
                     <Image
                       src="/TheShore-cover.jpg"
-                      alt="The Shore book cover"
+                      alt="Cover of 'The Shore' by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}
@@ -125,7 +125,7 @@ export default function BesideUs() {
                   <Link href="/books/for-you" className={styles.seriesCoverLink}>
                     <Image
                       src="/ForYou-cover.jpg"
-                      alt="For You book cover"
+                      alt="Cover of 'For You' by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}

@@ -29,7 +29,7 @@ export default function TheShoreChapterOne() {
               <Link href="/books/the-shore" className={styles.coverLink}>
                 <Image
                   src="/TheShore-cover.jpg"
-                  alt="The Shore book cover"
+                  alt="Cover of 'The Shore' by S.E. Brown"
                   width={500}
                   height={750}
                   className={styles.bookImage}

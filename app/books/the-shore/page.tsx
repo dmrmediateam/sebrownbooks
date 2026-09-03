@@ -29,7 +29,7 @@ export default function TheShore() {
               <Link href="/books/the-shore" className={styles.coverLink}>
                 <Image
                   src="/TheShore-cover.jpg"
-                  alt="The Shore book cover"
+                  alt="Cover of 'The Shore' by S.E. Brown"
                   width={500}
                   height={750}
                   className={styles.bookImage}
@@ -130,7 +130,7 @@ export default function TheShore() {
                   <Link href="/books/for-you" className={styles.seriesCoverLink}>
                     <Image
                       src="/ForYou-cover.jpg"
-                      alt="For You book cover"
+                      alt="Cover of 'For You' by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}
@@ -138,8 +138,8 @@ export default function TheShore() {
                   </Link>
                   <Link href="/books/beside-us" className={styles.seriesCoverLink}>
                     <Image
-                      src="/Beside-Us-CoverComingSoon.jpg"
-                      alt="Beside Us book cover"
+                      src="/BesideUs-cover.jpg"
+                      alt="Cover of 'Beside Us' by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}
