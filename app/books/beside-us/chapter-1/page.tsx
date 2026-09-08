@@ -36,7 +36,21 @@ export default function BesideUsChapterOne() {
                   priority
                 />
               </Link>
-              <h2 className={styles.releaseDateHeading}>Release date: September 9</h2>
+              <div className={styles.buyStack}>
+                <h2 className={styles.buyStackHeading}>Choose Your Format</h2>
+                <a
+                  href="https://www.amazon.com/gp/product/B0HHWPDZNK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Kindle eBook
+                </a>
+                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
+                <span className={styles.buyButton}>
+                  Paperback – Available Sept 11
+                </span>
+              </div>
             </div>
 
             <div className={styles.bookInfo}>
