@@ -28,6 +28,18 @@ export default function Links() {
 
             <div className={styles.linksContent}>
               <ul className={styles.connectList}>
+                <li className={styles.recentPost}>
+                  Most recent blog post:{' '}
+                  <a
+                    href="https://www.sebrownbooks.com/blog/shore-city-mountains-ohmy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.connectLink}
+                  >
+                    The Shore, the City, the Mountains...Oh My!
+                  </a>
+                </li>
+                <li className={styles.lineBreak} aria-hidden="true"></li>
                 <li>
                   <a
                     href="https://sebrownbooks.kit.com/newsletter"

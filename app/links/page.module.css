@@ -56,6 +56,16 @@
   gap: 0.75rem;
 }
 
+.recentPost {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  color: var(--color-text-primary);
+  font-weight: 300;
+}
+
+.lineBreak {
+  height: 1.5rem;
+}
+
 .connectLink {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: var(--color-text-primary);
