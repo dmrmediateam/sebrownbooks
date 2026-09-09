@@ -29,6 +29,17 @@ export default function Links() {
             <div className={styles.linksContent}>
               <ul className={styles.connectList}>
                 <li className={styles.recentPost}>
+                  Purchase{' '}
+                  <a
+                    href="https://www.amazon.com/gp/product/B0HHWPDZNK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.connectLink}
+                  >
+                    <i>Beside Us</i>
+                  </a>
+                </li>
+                <li className={styles.recentPost}>
                   Most recent blog post:{' '}
                   <a
                     href="https://www.sebrownbooks.com/blog/shore-city-mountains-ohmy"
