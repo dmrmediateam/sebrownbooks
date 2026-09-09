@@ -122,9 +122,6 @@ export default function Home() {
                 <p>
                   Abby Maxwell built a life she loves, one that finally feels safe for both her and her son. Luke Keil isn&apos;t interested in changing that. He simply wants to be part of it. Together, they&apos;re learning that the hardest part of love isn&apos;t falling. It&apos;s deciding, every single day, to stay.
                 </p>
-                <p>
-                  <strong>Release date: September 9</strong>
-                </p>
               </div>
 
               <Link href="/books/beside-us" className={styles.bookPageLink}>

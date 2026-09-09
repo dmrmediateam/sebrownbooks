@@ -83,9 +83,6 @@ export default function BesideUs() {
                   <p>
                     It&apos;s about choosing them. Every single day.
                   </p>
-                  <p>
-                    <strong>Release date: September 9</strong>
-                  </p>
                 </div>
                 <Link href="/books/beside-us/chapter-1" className={`${styles.outlineButton} ${styles.chapterButton}`}>
                   Read Chapter 1
