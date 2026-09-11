@@ -51,9 +51,14 @@ export default function BesideUs() {
                   Kindle eBook
                 </a>
                 <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
-                <span className={styles.buyButton}>
-                  Paperback – Available Sept 11
-                </span>
+                <a
+                  href="https://www.amazon.com/Beside-Us-Shore-S-Brown/dp/B0HHXV2YLW"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.buyButton}
+                >
+                  Paperback
+                </a>
               </div>
             </div>
 
