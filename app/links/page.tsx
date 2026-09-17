@@ -42,12 +42,12 @@ export default function Links() {
                 <li className={styles.recentPost}>
                   Most recent blog post:{' '}
                   <a
-                    href="https://www.sebrownbooks.com/blog/shore-city-mountains-ohmy"
+                    href="https://www.sebrownbooks.com/blog/creativity-in-all-its-forms"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.connectLink}
                   >
-                    The Shore, the City, the Mountains...Oh My!
+                    Creativity...In All Its Forms
                   </a>
                 </li>
                 <li className={styles.lineBreak} aria-hidden="true"></li>
