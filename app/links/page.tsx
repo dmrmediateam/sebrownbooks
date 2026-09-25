@@ -31,6 +31,24 @@ export default function Links() {
                 <li className={styles.recentPost}>
                   Purchase{' '}
                   <a
+                    href="https://www.amazon.com/gp/product/B0G1TXP2RD"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.connectLink}
+                  >
+                    <i>The Shore</i>
+                  </a>
+                  {', '}
+                  <a
+                    href="https://www.amazon.com/gp/product/B0G1Y6TGR9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.connectLink}
+                  >
+                    <i>For You</i>
+                  </a>
+                  {', and '}
+                  <a
                     href="https://www.amazon.com/gp/product/B0HHWPDZNK"
                     target="_blank"
                     rel="noopener noreferrer"
