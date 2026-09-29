@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBook, faHockeyPuck } from '@fortawesome/free-solid-svg-icons'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
@@ -29,7 +31,7 @@ export default function Links() {
             <div className={styles.linksContent}>
               <ul className={styles.connectList}>
                 <li className={styles.recentPost}>
-                  Purchase{' '}
+                  <FontAwesomeIcon icon={faBook} className={styles.lineIcon} aria-hidden="true" /> Purchase{' '}
                   <a
                     href="https://www.amazon.com/gp/product/B0G1TXP2RD"
                     target="_blank"
@@ -58,14 +60,14 @@ export default function Links() {
                   </a>
                 </li>
                 <li className={styles.recentPost}>
-                  Most recent blog post:{' '}
+                  <FontAwesomeIcon icon={faHockeyPuck} className={styles.lineIcon} aria-hidden="true" /> Most recent blog post:{' '}
                   <a
-                    href="https://www.sebrownbooks.com/blog/creativity-in-all-its-forms"
+                    href="https://www.sebrownbooks.com/blog/hockey-rabbit-hole"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.connectLink}
                   >
-                    Creativity...In All Its Forms
+                    The Hockey Rabbit Hole
                   </a>
                 </li>
                 <li className={styles.lineBreak} aria-hidden="true"></li>
