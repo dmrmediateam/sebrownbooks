@@ -46,7 +46,7 @@ export default function BesideUsChapterOne() {
                 >
                   Kindle eBook
                 </a>
-                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
+                <p className={styles.kindleUnlimited}>Included with Kindle+</p>
                 <a
                   href="https://www.amazon.com/Beside-Us-Shore-S-Brown/dp/B0HHXV2YLW"
                   target="_blank"

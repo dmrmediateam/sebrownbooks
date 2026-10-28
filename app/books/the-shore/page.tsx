@@ -52,7 +52,7 @@ export default function TheShore() {
                 >
                   Kindle eBook
                 </a>
-                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
+                <p className={styles.kindleUnlimited}>Included with Kindle+</p>
                 <a
                   href="https://www.amazon.com/Shore-S-Brown/dp/B0G1V12F9T"
                   target="_blank"

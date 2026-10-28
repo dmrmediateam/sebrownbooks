@@ -46,7 +46,7 @@ export default function ForYouChapterOne() {
                 >
                   Kindle eBook
                 </a>
-                <p className={styles.kindleUnlimited}>Included with Kindle Unlimited</p>
+                <p className={styles.kindleUnlimited}>Included with Kindle+</p>
                 <a
                   href="https://www.amazon.com/You-Shore-S-Brown/dp/B0G1YKD83J"
                   target="_blank"
@@ -321,7 +321,7 @@ export default function ForYouChapterOne() {
                     Paperback
                   </a>
                 </div>
-                <p className={styles.bottomKindleUnlimited}>Available on Kindle Unlimited</p>
+                <p className={styles.bottomKindleUnlimited}>Available on Kindle+</p>
               </div>
             </div>
           </div>
