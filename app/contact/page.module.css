@@ -6,8 +6,8 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
-  color: var(--color-off-white);
-  padding: 6rem 2rem 4rem;
+  color: var(--color-white);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -17,13 +17,11 @@
 }
 
 .heroTitle {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--color-off-white);
-  font-weight: 400;
+  color: var(--color-white);
 }
 
 .section {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2.5rem;
 }
 
 .container {
@@ -32,6 +30,14 @@
 }
 
 
+.card {
+  padding: 3rem;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(26, 42, 58, 0.08);
+  border: 1px solid rgba(26, 42, 58, 0.1);
+}
+
 .header {
   margin-bottom: 3rem;
   max-width: 40rem;
@@ -39,7 +45,9 @@
 
 .intro {
   color: var(--color-text-primary);
-  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .grid {
@@ -50,14 +58,15 @@
 }
 
 .asideTitle {
-  font-size: clamp(1.8rem, 3vw, 2.22rem);
   color: var(--color-dark-blue);
   margin-bottom: 1rem;
 }
 
 .asideText {
   color: var(--color-text-primary);
-  font-size: 1.05rem;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .emailLink {
@@ -88,7 +97,11 @@
   }
 
   .section {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
   }
 
   .header {

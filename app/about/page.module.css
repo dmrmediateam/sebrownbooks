@@ -6,8 +6,8 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
-  color: var(--color-off-white);
-  padding: 6rem 2rem 4rem;
+  color: var(--color-white);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -17,18 +17,24 @@
 }
 
 .heroTitle {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--color-off-white);
-  font-weight: 400;
+  color: var(--color-white);
 }
 
 .aboutSection {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2.5rem;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.card {
+  padding: 3rem;
+  background-color: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(26, 42, 58, 0.08);
+  border: 1px solid rgba(26, 42, 58, 0.1);
 }
 
 .content {
@@ -51,7 +57,6 @@
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(26, 42, 58, 0.2);
   object-fit: cover;
-  margin-bottom: 1rem;
 }
 
 .textContent {
@@ -100,6 +105,7 @@
 
   .authorImage {
     max-width: 300px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -109,7 +115,11 @@
   }
 
   .aboutSection {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
   }
 }
 

@@ -7,6 +7,8 @@ import styles from './Nav.module.css'
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/series/the-pittsburgh-forge-series', label: 'The Pittsburgh Forge Series' },
+  { href: '/series/the-shore-series', label: 'The Shore Series' },
   { href: '/about', label: 'About' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },

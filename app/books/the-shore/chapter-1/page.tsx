@@ -6,6 +6,13 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'The Shore, Chapter 1 | S.E. Brown Books',
   description: "Read the first chapter of The Shore, a heartfelt contemporary romance set in North Carolina's Outer Banks, where friendship, found family, and unexpected love change everything.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/the-shore/chapter-1',
+  },
 }
 
 export default function TheShoreChapterOne() {
@@ -29,9 +36,9 @@ export default function TheShoreChapterOne() {
               <Link href="/books/the-shore" className={styles.coverLink}>
                 <Image
                   src="/TheShore-cover.jpg"
-                  alt="Cover of 'The Shore' by S.E. Brown"
-                  width={500}
-                  height={750}
+                  alt="Cover of 'The Shore,' the first contemporary romance in The Shore Series by S.E. Brown"
+                  width={380}
+                  height={570}
                   className={styles.bookImage}
                   priority
                 />

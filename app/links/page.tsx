@@ -7,6 +7,9 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'Links | S.E. Brown Books',
   description: 'Every way to stay connected with S.E. Brown — newsletter, books, and social links, all in one place.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/links',
+  },
 }
 
 export default function Links() {

@@ -1,5 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import styles from './page.module.css'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | S.E. Brown Books',
+  description: 'The privacy policy for S.E. Brown Books. You know, the legal jargon.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/privacy-policy',
+  },
+}
 
 export default function PrivacyPolicy() {
   return (

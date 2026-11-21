@@ -6,6 +6,9 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'For You | S.E. Brown Books',
   description: "For You is a heartfelt contemporary romance set in North Carolina's Outer Banks, where forgiveness, family, and unexpected love prove it's never too late for a second chance.",
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/for-you',
+  },
 }
 
 export default function ForYou() {
@@ -29,9 +32,9 @@ export default function ForYou() {
               <Link href="/books/for-you" className={styles.coverLink}>
                 <Image
                   src="/ForYou-cover.jpg"
-                  alt="Cover of 'For You' by S.E. Brown"
-                  width={500}
-                  height={750}
+                  alt="Cover of 'For You,' the second contemporary romance in The Shore Series by S.E. Brown"
+                  width={380}
+                  height={570}
                   className={styles.bookImage}
                   priority
                 />
@@ -124,7 +127,7 @@ export default function ForYou() {
                   <Link href="/books/the-shore" className={styles.seriesCoverLink}>
                     <Image
                       src="/TheShore-cover.jpg"
-                      alt="Cover of 'The Shore' by S.E. Brown"
+                      alt="Cover of 'The Shore,' the first contemporary romance in The Shore Series by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}
@@ -133,7 +136,7 @@ export default function ForYou() {
                   <Link href="/books/beside-us" className={styles.seriesCoverLink}>
                     <Image
                       src="/BesideUs-cover.jpg"
-                      alt="Cover of 'Beside Us' by S.E. Brown"
+                      alt="Cover of 'Beside Us,' the third and final contemporary romance in The Shore Series by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}

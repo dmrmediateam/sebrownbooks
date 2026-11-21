@@ -1,6 +1,15 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import styles from './page.module.css'
 import { getAllBlogPosts } from '@/lib/blog'
+
+export const metadata: Metadata = {
+  title: 'S.E. Brown Blog | S.E. Brown Books',
+  description: 'Author S.E. Brown shares insights, book updates, and random ramblings, all depending on her mood. You never know what you might find in this blog.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/blog',
+  },
+}
 
 export const revalidate = 60
 

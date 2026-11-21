@@ -7,8 +7,8 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
-  color: var(--color-off-white);
-  padding: 6rem 2rem 4rem;
+  color: var(--color-white);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -18,23 +18,21 @@
 }
 
 .heroTitle {
-  font-size: clamp(3rem, 6vw, 5rem);
   margin-bottom: 1rem;
-  color: var(--color-off-white);
-  font-weight: 400;
+  color: var(--color-white);
 }
 
 .heroTagline {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   line-height: 1.8;
-  color: rgba(245, 245, 240, 0.95);
+  color: rgba(255, 255, 255, 0.95);
   font-weight: 300;
   font-style: italic;
 }
 
 /* Book Section */
 .bookSection {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2.5rem;
 }
 
 .container {
@@ -46,9 +44,9 @@
   display: inline-block;
   padding: 0.5rem 1.5rem;
   background-color: #7B3545;
-  color: var(--color-off-white);
+  color: var(--color-white);
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border-radius: 20px;
@@ -73,8 +71,9 @@
 }
 
 .bookImage {
-  width: 100%;
-  height: auto;
+  max-height: 570px;
+  width: auto;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(26, 42, 58, 0.15);
   object-fit: cover;
@@ -88,10 +87,8 @@
 }
 
 .sectionHeading {
-  font-size: clamp(2.16rem, 4.32vw, 2.88rem);
   color: var(--color-dark-blue);
   margin-bottom: 1.5rem;
-  font-weight: 500;
   border-bottom: 1px solid var(--color-accent-blue);
   padding-bottom: 0.5rem;
 }
@@ -103,10 +100,10 @@
 }
 
 .description p {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.9;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
   color: var(--color-text-primary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .description strong {
@@ -128,24 +125,20 @@
 }
 
 .characterName {
-  font-size: clamp(2.16rem, 3.456vw, 2.592rem);
   color: var(--color-dark-blue);
   margin-bottom: 0.75rem;
-  font-weight: 600;
 }
 
 .characterDesc {
-  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
-  line-height: 1.7;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
   color: var(--color-text-primary);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Buy Stack (below cover image) */
 .buyStackHeading {
-  font-size: clamp(2.1875rem, 4.375vw, 2.625rem);
   color: var(--color-dark-blue);
-  font-weight: 500;
   margin-bottom: 0.25rem;
   text-align: center;
 }
@@ -157,9 +150,8 @@
 
 .sidebarCategories p {
   color: var(--color-dark-blue);
-  font-style: italic;
-  font-weight: 300;
-  font-size: 1.075rem;
+  font-weight: 500;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
   line-height: 1.6;
 }
 
@@ -179,7 +171,7 @@
 .buyButton {
   padding: 0.75rem 1rem;
   background-color: var(--color-dark-blue);
-  color: var(--color-off-white);
+  color: var(--color-white);
   font-size: 0.95rem;
   font-weight: 600;
   border-radius: 8px;
@@ -229,9 +221,9 @@
 /* Before You Read */
 .beforeYouReadText {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.8;
+  line-height: 1.6;
   color: var(--color-text-primary);
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
@@ -255,7 +247,7 @@
 
 .outlineButton:hover {
   background-color: var(--color-dark-blue);
-  color: var(--color-off-white);
+  color: var(--color-white);
 }
 
 /* Responsive Design */
@@ -283,7 +275,7 @@
   }
 
   .bookSection {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
   }
 
   .bookInfo {

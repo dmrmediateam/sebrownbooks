@@ -6,6 +6,9 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'For You Content Warnings | S.E. Brown Books',
   description: 'Review the content warnings for For You before reading. This page contains spoiler-free information to help you decide if the story is right for you.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/for-you/content-warnings',
+  },
 }
 
 export default function ForYouContentWarnings() {
@@ -27,9 +30,9 @@ export default function ForYouContentWarnings() {
               <Link href="/books/for-you" className={styles.coverLink}>
                 <Image
                   src="/ForYou-cover.jpg"
-                  alt="Cover of 'For You' by S.E. Brown"
-                  width={500}
-                  height={750}
+                  alt="Cover of 'For You,' the second contemporary romance in The Shore Series by S.E. Brown"
+                  width={380}
+                  height={570}
                   className={styles.bookImage}
                   priority
                 />
@@ -45,11 +48,16 @@ export default function ForYouContentWarnings() {
                   This page exists because you deserve to decide what you&apos;re ready for. I&apos;ve done my best to identify the content in this book that some readers may find difficult, but I want to be honest: what feels heavy is personal. What I&apos;ve listed here reflects my own read of the story.
                 </p>
                 <p className={styles.contactNote}>
-                  If you&apos;re ever unsure, feel free to{' '}
+                  If you ever have a question about the content in my books, please{' '}
                   <Link href="/contact" className={styles.contactLink}>
                     reach out
                   </Link>
                   .
+                </p>
+                <p>
+                  Happy reading!
+                  <br />
+                  Susie
                 </p>
               </div>
 

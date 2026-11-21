@@ -6,6 +6,9 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'Beside Us | S.E. Brown Books',
   description: 'Beside Us is the emotional conclusion to The Shore Series, where Abby and Luke discover that love is worth fighting for, even when the past refuses to let go.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/beside-us',
+  },
 }
 
 export default function BesideUs() {
@@ -28,9 +31,9 @@ export default function BesideUs() {
             <div className={styles.bookImageWrapper}>
               <Image
                 src="/BesideUs-cover.jpg"
-                alt="Cover of 'Beside Us' by S.E. Brown"
-                width={500}
-                height={750}
+                alt="Cover of 'Beside Us,' the third and final contemporary romance in The Shore Series by S.E. Brown"
+                width={380}
+                height={570}
                 className={styles.bookImage}
                 priority
               />
@@ -134,7 +137,7 @@ export default function BesideUs() {
                   <Link href="/books/the-shore" className={styles.seriesCoverLink}>
                     <Image
                       src="/TheShore-cover.jpg"
-                      alt="Cover of 'The Shore' by S.E. Brown"
+                      alt="Cover of 'The Shore,' the first contemporary romance in The Shore Series by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}
@@ -143,7 +146,7 @@ export default function BesideUs() {
                   <Link href="/books/for-you" className={styles.seriesCoverLink}>
                     <Image
                       src="/ForYou-cover.jpg"
-                      alt="Cover of 'For You' by S.E. Brown"
+                      alt="Cover of 'For You,' the second contemporary romance in The Shore Series by S.E. Brown"
                       width={100}
                       height={150}
                       className={styles.seriesCoverImage}

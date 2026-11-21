@@ -4,7 +4,10 @@ import styles from './page.module.css'
 
 export const metadata: Metadata = {
   title: 'About | S.E. Brown',
-  description: 'Meet S.E. Brown, author of heartfelt contemporary romance novels inspired by friendship, found family, and the moments that change our lives forever.',
+  description: 'Meet S.E. Brown, author of contemporary romance novels featuring realistic characters with big feelings working through real-life problems.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/about',
+  },
 }
 
 export default function About() {
@@ -18,43 +21,45 @@ export default function About() {
 
       <section className={styles.aboutSection}>
         <div className={styles.container}>
-          <div className={styles.content}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src="/Sus-LO.jpg"
-                alt="Relaxed image of author, S.E. Brown"
-                width={400}
-                height={400}
-                className={styles.authorImage}
-                priority
-              />
-            </div>
+          <div className={styles.card}>
+            <div className={styles.content}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/Sus-LO.jpg"
+                  alt="Relaxed image of author, S.E. Brown"
+                  width={400}
+                  height={400}
+                  className={styles.authorImage}
+                  priority
+                />
+              </div>
             
-            <div className={styles.textContent}>
-              <p className={styles.intro}>
-                S.E. Brown is a
-              </p>
-              <p className={styles.trait}>
-                flip-flop-wearin&apos;,
-              </p>
-              <p className={styles.trait}>
-                back-roads-drivin&apos;,
-              </p>
-              <p className={styles.trait}>
-                mac-and-cheese-lovin&apos;,
-              </p>
-              <p className={styles.trait}>
-                romance-book-devourin&apos;,
-              </p>
-              <p className={styles.trait}>
-                music-cranked-up-singin&apos;,
-              </p>
-              <p className={styles.trait}>
-                Colorado-Avalanche-cheerin&apos;,
-              </p>
-              <p className={styles.outro}>
-                writer of romance novels…with a little heat.
-              </p>
+              <div className={styles.textContent}>
+                <p className={styles.intro}>
+                  S.E. Brown is a
+                </p>
+                <p className={styles.trait}>
+                  flip-flop-wearin&apos;,
+                </p>
+                <p className={styles.trait}>
+                  back-roads-drivin&apos;,
+                </p>
+                <p className={styles.trait}>
+                  mac-and-cheese-lovin&apos;,
+                </p>
+                <p className={styles.trait}>
+                  romance-book-devourin&apos;,
+                </p>
+                <p className={styles.trait}>
+                  music-cranked-up-singin&apos;,
+                </p>
+                <p className={styles.trait}>
+                  Colorado-Avalanche-cheerin&apos;,
+                </p>
+                <p className={styles.outro}>
+                  writer of romance novels…with a little heat.
+                </p>
+              </div>
             </div>
           </div>
         </div>

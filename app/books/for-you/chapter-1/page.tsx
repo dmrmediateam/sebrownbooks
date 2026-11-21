@@ -6,6 +6,13 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'For You, Chapter 1 | S.E. Brown Books',
   description: "Read the first chapter of For You, a contemporary romance set in North Carolina's Outer Banks where family, forgiveness, and love can change the course of a life.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/for-you/chapter-1',
+  },
 }
 
 export default function ForYouChapterOne() {
@@ -29,9 +36,9 @@ export default function ForYouChapterOne() {
               <Link href="/books/for-you" className={styles.coverLink}>
                 <Image
                   src="/ForYou-cover.jpg"
-                  alt="Cover of 'For You' by S.E. Brown"
-                  width={500}
-                  height={750}
+                  alt="Cover of 'For You,' the second contemporary romance in The Shore Series by S.E. Brown"
+                  width={380}
+                  height={570}
                   className={styles.bookImage}
                   priority
                 />

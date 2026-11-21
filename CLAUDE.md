@@ -16,29 +16,42 @@ There is no test suite/runner configured in this repo (no `test` script, no Jest
 
 A dev-server launch config for the Claude Code preview tool already exists at `.claude/launch.json` (name `sebrownbooks-dev`, port 3000).
 
+`npm run build` writes to the same `.next/` folder the dev server uses. Stop the dev server before building, and delete `.next/` before starting it again. The build downloads the Lora and Source Sans 3 fonts from Google at build time (it needs network access); a one-off "error occurred in `next/font`" failure has happened once and passed on retry.
+
 ## Architecture
 
-**Stack:** Next.js 14 (App Router, TypeScript), CSS Modules for styling (no Tailwind, no CSS-in-JS — `styled-components` is an installed dependency but is not actually used anywhere), Sanity CMS for the blog, Twilio SendGrid for the contact form, FontAwesome (React SVG components) for icons, Adobe Typekit + local OTF files for fonts.
+**Stack:** Next.js 14 (App Router, TypeScript), CSS Modules for styling (no Tailwind, no CSS-in-JS — `styled-components` is an installed dependency but is not actually used anywhere), Sanity CMS for the blog, Twilio SendGrid for the contact form, FontAwesome (React SVG components) for icons, Lora + Source Sans 3 (via `next/font/google`) for type.
 
 ### Page structure and styling convention
 
-Every route is `app/<route>/page.tsx` + a co-located `page.module.css` of the same name. There are no shared layout components between sibling pages beyond the root `Nav`/`Footer` — **each page's JSX and CSS module is self-contained and duplicated rather than abstracted into shared components.** For example, the three book pages (`app/books/the-shore`, `app/books/for-you`, `app/books/beside-us`) and their `chapter-1`/`content-warnings` sub-routes independently re-declare nearly identical class names (`.bookDetails`, `.bookImageWrapper`, `.bookInfo`, `.sectionHeading`, `.buyStack`, `.characterName`, etc.) in their own `page.module.css` files with the same values. This is the established pattern in this codebase: when adding a new page or section, **copy the structure of the most similar existing sibling page** rather than extracting a shared component/hook, so the pages stay independently editable.
+Every route is `app/<route>/page.tsx` + a co-located `page.module.css` of the same name. There are no shared layout components between sibling pages beyond the root `Nav`/`Footer` — **each page's JSX and CSS module is self-contained and duplicated rather than abstracted into shared components.** For example, the book pages (`app/books/the-shore`, `for-you`, `beside-us`, `CALDER`) and their `chapter-1`/`content-warnings` sub-routes independently re-declare nearly identical class names (`.bookDetails`, `.bookImageWrapper`, `.bookInfo`, `.sectionHeading`, `.buyStack`, etc.) in their own `page.module.css` files with the same values. This is the established pattern in this codebase: when adding a new page or section, **copy the structure of the most similar existing sibling page** rather than extracting a shared component/hook, so the pages stay independently editable. A global style change therefore means editing every page's stylesheet (grep for the shared class names).
 
 Only a few components are actually shared and imported across pages, all in `app/components/`: `Nav`, `Footer`, `NewsletterForm`, `ContactForm`. Of these, `Nav`, `NewsletterForm`, and `ContactForm` are `'use client'` components (state/interactivity); everything else in the app, including every page, is a server component.
 
+Page families: `app/books/<title>/` (book page + `chapter-1` + `content-warnings`), `app/series/<series>/` (the-shore-series, the-pittsburgh-forge-series: a hero plus `bookCard`s), and the homepage, whose Feature card and two Series cards exist only in `app/page.module.css`.
+
+**Card look.** Cards (book/series cards, the homepage cards, and the About and Contact content) share one look: white background, `border-radius: 8px`, `box-shadow: 0 2px 12px rgba(26, 42, 58, 0.08)`, `border: 1px solid rgba(26, 42, 58, 0.1)`, 3rem padding (2rem 1.5rem on phones).
+
+**Spacing rhythm.** Hero sections use `padding: 4rem 2rem` with no margin under the last hero element. The last content section of each page uses `padding-bottom: 2.5rem` (1.5rem on phones) and the footer has `margin-top: 2rem`, which gives a consistent 72px gap above the footer on every page. The homepage's stacked sections are separated by 4rem.
+
 ### Global styles and design tokens
 
-`app/globals.css` defines the color palette as CSS custom properties (`--color-dark-blue`, `--color-off-black`, `--color-off-white`, `--color-accent-blue`, plus semantic aliases) and the two font families:
-- **AmazonEndure** — body text, loaded from local `.otf` files in `public/Fonts/` at weights 300/400/600 (plus italics)
-- **shelby** — all headings (`h1`–`h6`), loaded via the Adobe Typekit `<link>` in `app/layout.tsx`'s `<head>`
+`app/globals.css` defines the color palette as CSS custom properties (`--color-dark-blue`, `--color-off-black`, `--color-white` (`#FFFFFF`), `--color-accent-blue`, plus semantic aliases) and `--font-body` / `--font-heading`.
 
-Base `h1`–`h6`/`p` sizing is set globally with `clamp()`; individual pages then override `font-size` on their own heading classes (e.g. `.sectionHeading`, `.characterName`) rather than relying on the bare tag styles.
+- **Source Sans 3** (weights 400/500/600) — body text, nav, buttons, labels. **Lora** (600) — all headings (`h1`–`h6`). Both are loaded in `app/layout.tsx` and exposed as CSS variables on `<html>`.
+- Heading sizes live **only** in the global `h1`/`h2`/`h3` rules (`clamp(2.25rem, 3.5vw, 2.75rem)` / `clamp(1.5rem, 2.5vw, 1.875rem)` / `clamp(1.25rem, 2vw, 1.375rem)`). Don't set `font-size` or `font-weight` on a heading's page-level class.
+- Descriptive body text (book descriptions, character text, card text, privacy and content-warnings text) uses `font-size: clamp(.9rem, 1.5vw, 1.0rem); line-height: 1.5; font-weight: 400`.
+- The "S.E. Brown" script logo in `Nav` still uses the Adobe Typekit font `shelby` (the `<link>` in `app/layout.tsx`'s `<head>`). The `AmazonEndure` `@font-face` rules and `public/Fonts/*.otf` are leftovers and no longer used by any text.
 
-One recurring CSS gotcha in this codebase: `<strong>` inside a paragraph with `font-weight: 300` does **not** render as visually bold by default — CSS's `bolder` keyword only steps 300 up to 400. Several stylesheets add an explicit `strong { font-weight: 600; }` override scoped to the containing class to fix this; do the same when bolding text inside a light-weight paragraph.
+One recurring CSS gotcha: only Source Sans 3 weights 400/500/600 are loaded, so `font-weight: 300` renders as 400, and a `<strong>` inside a paragraph declared at 300 resolves to 400 and does **not** look bold. Several stylesheets add an explicit `strong { font-weight: 600; }` scoped to the containing class; do the same when bolding text.
 
 ### Nav and hidden pages
 
-`app/components/Nav.tsx` hardcodes its own link list (`navLinks`) — adding a new top-level page does **not** automatically add it to the nav or footer. Some pages are intentionally excluded from navigation and reachable only by direct URL (e.g. the `chapter-1` sample-chapter pages under `app/books/*/chapter-1`), and `/links` is a standalone page also left out of the nav intentionally.
+`app/components/Nav.tsx` hardcodes its own link list (`navLinks`) — adding a new top-level page does **not** automatically add it to the nav or footer. Some pages are intentionally excluded from navigation and reachable only by direct URL: the `chapter-1` sample-chapter pages under `app/books/*/chapter-1` (also `noindex`) and `/links` (a standalone link-in-bio page). `/books/CALDER/chapter-1` does not exist yet; its button on the CALDER page is commented out.
+
+### Metadata and SEO
+
+`app/layout.tsx` sets `robots` ("index, follow"), `authors` and `publisher` for the whole site. Every page defines its own `metadata` (title, description) plus an absolute `alternates.canonical` of the form `https://sebrownbooks.com/<path>` (no `www`). `chapter-1` pages override `robots` to `noindex`. `app/sitemap.ts` is a **hand-maintained list of static routes** (only blog posts are generated from Sanity), so add new pages to it yourself. When you add a page, set its title, description and canonical.
 
 ### Blog (Sanity CMS)
 
@@ -54,4 +67,8 @@ Blog content is fetched from Sanity via `lib/sanity.ts` (client) and `lib/blog.t
 
 ### Images
 
-Book cover images live in `public/` as flat files (e.g. `TheShore-cover.jpg`, `ForYou-cover.jpg`, `Beside-Us-CoverComingSoon.jpg`) and are referenced by absolute path (`/TheShore-cover.jpg`) from `next/image`, not imported.
+Images live in `public/` as flat files and are referenced by absolute path (`/TheShore-cover.jpg`) from `next/image`, not imported. Book covers are named `<Title>-cover.jpg` (`TheShore`, `ForYou`, `BesideUs`, `CALDER`, `HAYES`, `ROWAN`, `KINCAID`, `PIERCE`, `THEFORGE`) and all share one 1575 × 2400 size; series banners are `the-shore-series.jpg` and `the-pittsburgh-forge-series.jpg` (1200 × 630).
+
+- Cover alt text is the same everywhere a cover appears, e.g. `Cover of 'The Shore,' the first contemporary romance in The Shore Series by S.E. Brown`. If you change one, grep for the file name and change every occurrence.
+- Cover sizing: book-page covers are capped at `max-height: 570px`, series-page covers at `420px` (`width: auto; max-width: 100%`).
+- **Dev-only gotcha:** `next dev` has twice served the wrong cover for a URL (a stale or crossed entry in the image cache). If a cover looks wrong, delete `.next/cache/images` and restart the dev server; the file in `public/` is fine.

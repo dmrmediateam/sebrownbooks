@@ -4,8 +4,17 @@ import Link from 'next/link'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'S.E. Brown Books',
-  description: 'Welcome to S.E. Brown Books, home of heartfelt contemporary romance novels featuring friendship, found family, second chances, and unforgettable happily ever afters.',
+  title: 'S.E. Brown Books | Contemporary Romance Author',
+  description: 'Welcome to S.E. Brown Books, home of contemporary romance novels featuring realistic characters with big feelings working through real-life problems.',
+  alternates: {
+    canonical: 'https://sebrownbooks.com/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  authors: [{ name: 'S.E. Brown' }],
+  publisher: 'S.E. Brown Books',
 }
 
 export default function Home() {
@@ -14,120 +23,75 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>S.E. Brown Books</h1>
+          <h1 className={styles.heroTitle}>S.E. Brown</h1>
           <p className={styles.heroText}>
-            Small-town romance with found family, heart, and a little heat.
-          </p>
+            Contemporary romance author.<br />
+            Realistic characters with big feelings working through real-life problems.
+</p>
         </div>
       </section>
 
-      {/* Series Coming Soon Image */}
-      <section className={styles.seriesImageSection}>
-        <Image
-          src="/the-shore-series.jpg"
-          alt="Covers of the Shore Series, including 'The Shore,' 'For You,' and 'Beside Us'"
-          width={1200}
-          height={630}
-          className={styles.seriesComingImage}
-          priority
-        />
+      {/* Feature Section */}
+      <section className={styles.featureSection}>
+        <div className={styles.featureCard}>
+          <Link href="/books/CALDER" className={styles.coverLink}>
+            <Image
+              src="/CALDER-cover.jpg"
+              alt="Cover of 'CALDER,' the first hockey romance in The Pittsburgh Forge Series by S.E. Brown"
+              width={380}
+              height={570}
+              className={styles.featureImage}
+              priority
+            />
+          </Link>
+          <div className={styles.featureContent}>
+            <p className={styles.featureLabel}>The Pittsburgh Forge Series, Book 1</p>
+            <h2 className={styles.featureTitle}>CALDER</h2>
+            <p className={styles.featureText}>
+              <i>CALDER</i> introduces top defenseman and NHL team captain Gage Calder, a man who’s spent years carrying the responsibility for everyone around him. When a potentially career-ending injury takes him off the ice, he’ll need the help of experienced physical therapist Julianne Shaw. As their feelings grow, they’ll have to weigh the potential consequences of their choice to be together.
+            </p>
+            <p className={styles.featureDates}>
+              <strong>Pre-order: November 30</strong>
+              <br />
+              Available: January 13
+            </p>
+            <Link href="/books/CALDER" className={styles.bookPageLink}>
+              More About <i>CALDER</i>
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* Books Section */}
-      <section className={styles.booksSection}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>The Shore Series</h2>
-          <p className={styles.sectionTagline}>
-            <strong><i>Some people come to the Outer Banks for the sand and surf.<br />
-            The people who stay find something they weren&apos;t looking for.</i></strong>
-          </p>
-          <p className={styles.sectionIntro}>
-            The Shore Series is a contemporary small-town romance set on North Carolina&apos;s Outer Banks, following a found family of friends who become each other&apos;s anchors through heartbreak, second chances, and the slow work of choosing to stay. If you love slow-burn romance, coastal settings, and found family stories where every couple gets their happily ever after, you&apos;re in the right place.
-          </p>
-
-          {/* Book 1: The Shore */}
-          <div className={styles.bookCard}>
-            <div className={styles.bookImageWrapper}>
-              <Link href="/books/the-shore" className={styles.coverLink}>
-                <Image
-                  src="/TheShore-cover.jpg"
-                  alt="Cover of 'The Shore' by S.E. Brown"
-                  width={400}
-                  height={600}
-                  className={styles.bookImage}
-                  priority
-                />
-              </Link>
-            </div>
-            <div className={styles.bookContent}>
-              <h3 className={styles.bookTitle}>The Shore (Book 1)</h3>
-
-              <div className={styles.bookDescription}>
-                <p>
-                  Ryan Blake came to the Outer Banks looking for quiet. Cody Calloway wasn&apos;t looking for anything at all. But between the salt air, found family, and unexpected love, they discover that sometimes home is the place you never planned to stay.
-                </p>
-              </div>
-
-              <Link href="/books/the-shore" className={styles.bookPageLink}>
-                More About <i>The Shore</i>
-              </Link>
-            </div>
+      {/* Series Section */}
+      <section className={styles.seriesCardsSection}>
+        <div className={styles.seriesCards}>
+          <div className={styles.seriesCard}>
+            <h2 className={styles.seriesCardTitle}>
+              <Link href="/series/the-shore-series">The Shore Series</Link>
+            </h2>
+            <Link href="/series/the-shore-series" className={styles.coverLink}>
+              <Image
+                src="/the-shore-series.jpg"
+                alt="Covers of the Shore Series, including 'The Shore,' 'For You,' and 'Beside Us' by S.E. Brown"
+                width={1200}
+                height={630}
+                className={styles.seriesCardImage}
+              />
+            </Link>
           </div>
-
-          {/* Book 2: For You */}
-          <div className={styles.bookCard}>
-            <div className={styles.bookImageWrapper}>
-              <Link href="/books/for-you" className={styles.coverLink}>
-                <Image
-                  src="/ForYou-cover.jpg"
-                  alt="Cover of 'For You' by S.E. Brown"
-                  width={400}
-                  height={600}
-                  className={styles.bookImage}
-                />
-              </Link>
-            </div>
-            <div className={styles.bookContent}>
-              <h3 className={styles.bookTitle}>For You (Book 2)</h3>
-
-              <div className={styles.bookDescription}>
-                <p>
-                  Madison Quinn doesn&apos;t do vulnerable. Her quick wit and guarded smile have kept her safe from the mess love leaves behind, until Declan Healy, the one man who sees through her armor and stays anyway. As old secrets rise and new ties take root, Madison has to decide if she&apos;s willing to risk the one thing she&apos;s spent years avoiding.
-                </p>
-              </div>
-
-              <Link href="/books/for-you" className={styles.bookPageLink}>
-                More About <i>For You</i>
-              </Link>
-            </div>
-          </div>
-
-          {/* Book 3: Beside Us */}
-          <div className={styles.bookCard}>
-            <div className={styles.bookImageWrapper}>
-              <Link href="/books/beside-us" className={styles.coverLink}>
-                <Image
-                  src="/BesideUs-cover.jpg"
-                  alt="Cover of 'Beside Us' by S.E. Brown"
-                  width={400}
-                  height={600}
-                  className={styles.bookImage}
-                />
-              </Link>
-            </div>
-            <div className={styles.bookContent}>
-              <h3 className={styles.bookTitle}>Beside Us (Book 3)</h3>
-
-              <div className={styles.bookDescription}>
-                <p>
-                  Abby Maxwell built a life she loves, one that finally feels safe for both her and her son. Luke Keil isn&apos;t interested in changing that. He simply wants to be part of it. Together, they&apos;re learning that the hardest part of love isn&apos;t falling. It&apos;s deciding, every single day, to stay.
-                </p>
-              </div>
-
-              <Link href="/books/beside-us" className={styles.bookPageLink}>
-                More about <i>Beside Us</i>
-              </Link>
-            </div>
+          <div className={styles.seriesCard}>
+            <h2 className={styles.seriesCardTitle}>
+              <Link href="/series/the-pittsburgh-forge-series">The Pittsburgh Forge Series</Link>
+            </h2>
+            <Link href="/series/the-pittsburgh-forge-series" className={styles.coverLink}>
+              <Image
+                src="/the-pittsburgh-forge-series.jpg"
+                alt="Cover of 'CALDER' by S.E. Brown"
+                width={1200}
+                height={630}
+                className={styles.seriesCardImage}
+              />
+            </Link>
           </div>
         </div>
       </section>

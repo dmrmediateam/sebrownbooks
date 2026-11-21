@@ -7,8 +7,8 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
-  color: var(--color-off-white);
-  padding: 6rem 2rem 4rem;
+  color: var(--color-white);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -18,13 +18,11 @@
 }
 
 .heroTitle {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--color-off-white);
-  font-weight: 400;
+  color: var(--color-white);
 }
 
 .section {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2.5rem;
 }
 
 .container {
@@ -53,15 +51,13 @@
 }
 
 .heading {
-  font-size: clamp(1.8rem, 3.6vw, 2.4rem);
   color: var(--color-dark-blue);
   margin-bottom: 0.5rem;
-  font-weight: 600;
 }
 
 .sectionContent p {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.8;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
   color: var(--color-text-primary);
   font-weight: 300;
 }
@@ -76,8 +72,8 @@
 }
 
 .list li {
-  font-size: clamp(1rem, 1.5vw, 1.125rem);
-  line-height: 1.8;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
   color: var(--color-text-primary);
   font-weight: 300;
   padding-left: 1.5rem;
@@ -109,7 +105,7 @@
   }
 
   .section {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
   }
 
   .content {

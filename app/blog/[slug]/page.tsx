@@ -51,6 +51,9 @@ export async function generateMetadata({
   return {
     title: post.seo?.metaTitle || post.title,
     description: post.seo?.metaDescription || post.description,
+    alternates: {
+      canonical: `https://sebrownbooks.com/blog/${params.slug}`,
+    },
     openGraph: {
       title: post.seo?.metaTitle || post.title,
       description: post.seo?.metaDescription || post.description,

@@ -6,6 +6,13 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: 'Beside Us, Chapter 1 | S.E. Brown Books',
   description: 'Read the first chapter of Beside Us, the emotional conclusion to The Shore Series, where Abby and Luke discover that love is worth fighting for, even when the past refuses to let go.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://sebrownbooks.com/books/beside-us/chapter-1',
+  },
 }
 
 export default function BesideUsChapterOne() {
@@ -29,9 +36,9 @@ export default function BesideUsChapterOne() {
               <Link href="/books/beside-us" className={styles.coverLink}>
                 <Image
                   src="/BesideUs-cover.jpg"
-                  alt="Cover of 'Beside Us' by S.E. Brown"
-                  width={500}
-                  height={750}
+                  alt="Cover of 'Beside Us,' the third and final contemporary romance in The Shore Series by S.E. Brown"
+                  width={380}
+                  height={570}
                   className={styles.bookImage}
                   priority
                 />

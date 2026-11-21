@@ -1,0 +1,244 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-bg-primary);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-dark-blue) 0%, var(--color-off-black) 100%);
+  color: var(--color-white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  margin-bottom: 0;
+  color: var(--color-white);
+}
+
+.heroTagline {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Book Section */
+.bookSection {
+  padding: 5rem 2rem 2.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bookNumber {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #7B3545;
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.bookDetails {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.bookImageWrapper {
+  position: sticky;
+  top: 2rem;
+  width: 100%;
+}
+
+.coverLink {
+  display: block;
+}
+
+.bookImage {
+  max-height: 570px;
+  width: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(26, 42, 58, 0.15);
+  object-fit: cover;
+  border: 1px solid rgba(26, 42, 58, 0.1);
+}
+
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sectionHeading {
+  color: var(--color-dark-blue);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-accent-blue);
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.description p {
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+.description strong {
+  font-weight: 600;
+}
+
+/* Buy Stack (below cover image) */
+.buyStackHeading {
+  color: var(--color-dark-blue);
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.sidebarCategories {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.sidebarCategories p {
+  color: var(--color-dark-blue);
+  font-weight: 500;
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.6;
+}
+
+.sidebarDivider {
+  border: none;
+  border-top: 1px solid rgba(26, 42, 58, 0.15);
+  margin: 1.5rem 0 0;
+}
+
+.buyStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+}
+
+.buyStack .buyStackHeading {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+/* The Pittsburgh Forge Series */
+.seriesText {
+  font-size: clamp(.9rem, 1.5vw, 1.0rem);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.seriesBooks {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.seriesBook {
+  display: block;
+}
+
+.seriesCoverImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(26, 42, 58, 0.15);
+  object-fit: cover;
+}
+
+/* Before You Read */
+.beforeYouReadText {
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.chapterButton {
+  margin-top: 1.875rem;
+}
+
+.outlineButton {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background-color: transparent;
+  color: var(--color-dark-blue);
+  border: 2px solid var(--color-dark-blue);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.outlineButton:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .bookDetails {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .bookImageWrapper {
+    position: relative;
+    top: 0;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .bookSection {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+
+  .bookInfo {
+    gap: 2rem;
+  }
+
+  .seriesBooks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
